@@ -10,7 +10,7 @@ const AboutSection = () => {
           {/* Imagen */}
           <div className="md:w-1/2 flex justify-center">
             <img
-              src="/src/assets/about.jpg"
+              src="/images/about.jpg"
               alt="Nuestro equipo de trabajo"
               className="rounded-2xl shadow-lg w-full max-w-md object-cover"
             />

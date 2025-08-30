@@ -1,5 +1,5 @@
 import img10 from '../../assets/productos/img10.jpg';
-import img11 from '../../assets/productos/img11.jpg';
+import img11 from '../../assets/productos/FenolicoDobleFilm.jpg';
 import img12 from '../../assets/productos/img12.jpg';
 const productos = [
   {
@@ -34,7 +34,7 @@ export default function FeaturedProductsSection() {
             />
             <h3 className="text-xl font-semibold text-green-800">{prod.nombre}</h3>
             <p className="text-gray-700 text-justify mt-2">{prod.descripcion}</p>
-            <button className="mt-4 bg-green-700 text-white px-4 py-2 rounded hover:bg-green-800 transition-colors">
+            <button className="mt-4 bg-green-700 text-white px-4 py-2 rounded hover:bg-yellow-500 transition-colors">
               Ver más
             </button>
           </div>

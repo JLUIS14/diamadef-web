@@ -9,12 +9,12 @@ const products = [
   },
   {
     name: "Vigas de Pino",
-    img: "/assets/pino.jpg",
+    img: "/assets/img1.jpg",
     desc: "Vigas resistentes para estructuras y techos.",
   },
   {
     name: "Tablas de Nogal",
-    img: "/assets/nogal.jpg",
+    img: "/assets/img5.jpg",
     desc: "Perfectas para proyectos de carpintería y decoración.",
   },
   {

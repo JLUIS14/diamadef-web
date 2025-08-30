@@ -10,13 +10,42 @@ import Services from "./pages/Services";
 import Gallery from "./pages/Gallery";
 import Clients from "./pages/Clients";
 import Blog from "./pages/Blog";
+import Post from "./pages/Post";
 import Contact from "./pages/Contact";
+
+import Tornillo from "./pages/productos/maderas/Tornillo";
+import Cachimbo from "./pages/productos/maderas/Cachimbo";
+import Panguana from "./pages/productos/maderas/Panguana";
+import Copaiba from "./pages/productos/maderas/Copaiba";
+import Roble from "./pages/productos/maderas/Roble";
+import Bolaina from "./pages/productos/maderas/Bolaina";
+import Huayruro from "./pages/productos/maderas/Huayruro";
+import Moena from "./pages/productos/maderas/Moena";
+import Eucalipto from "./pages/productos/maderas/Eucalipto";
+import Higuerilla from "./pages/productos/maderas/Higuerilla";
+
+import Okoume from "./pages/productos/triplay/Okoume";
+import Bintangor from "./pages/productos/triplay/Bintangor"
+import Lupuna from "./pages/productos/triplay/Lupuna"
+import Fenolico from "./pages/productos/triplay/Fenolico-bc";
+import FenolicoDobleFilm from "./pages/productos/triplay/Fenolico-doble-film";
+import Osb from "./pages/productos/triplay/OSB";
+import Mdf from "./pages/productos/triplay/Mdf";
+
+import Parihuelas from "./pages/productos/Parihuelas";
+import Durmientes from "./pages/productos/Durmientes";
+import Postes from "./pages/productos/Postes";
+
+import Cortes from "./pages/servicios/cortes";
+import Termico from "./pages/servicios/Termico";
+import Preventivo from "./pages/servicios/Preventivo";
 
 export default function App() {
   return (
     <>
       <Navbar />
       <Routes>
+        {/* Rutas principales */}
         <Route path="/" element={<Home />} />
         <Route path="/nosotros" element={<About />} />
         <Route path="/productos" element={<Products />} />
@@ -24,10 +53,66 @@ export default function App() {
         <Route path="/galeria" element={<Gallery />} />
         <Route path="/clientes" element={<Clients />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:id" element={<Post />} />
         <Route path="/contacto" element={<Contact />} />
+
+        {/* Ruta específica para Maderas */}
+        <Route path="/productos/maderas/tornillo" element={<Tornillo />} />
+        <Route path="/productos/maderas/cachimbo" element={<Cachimbo />} />
+        <Route path="/productos/maderas/panguana" element={<Panguana />} />
+        <Route path="/productos/maderas/copaiba" element={<Copaiba />} />
+        <Route path="/productos/maderas/roble" element={<Roble/>}/>
+        <Route path="/productos/maderas/bolaina" element={<Bolaina/>}/>
+        <Route path="/productos/maderas/huayruro" element={<Huayruro/>}/>
+        <Route path="/productos/maderas/moena" element={<Moena/>}/>
+        <Route path="/productos/maderas/eucalipto" element={<Eucalipto/>}/>
+        <Route path="/productos/maderas/higuerilla" element={<Higuerilla/>}/>
+
+        <Route path="/productos/triplay/okoume" element={<Okoume/>}/>
+        <Route path="/productos/triplay/bintangor" element={<Bintangor/>}/>
+        <Route path="/productos/triplay/lupuna" element={<Lupuna/>}/>
+        <Route path="/productos/triplay/fenolico-bc" element={<Fenolico/>}/>
+        <Route path="/productos/triplay/fenolico-doble-film" element={<FenolicoDobleFilm/>}/>
+        <Route path="/productos/triplay/osb" element={<Osb/>}/>
+        <Route path="/productos/triplay/mdf" element={<Mdf/>}/>
+
+        <Route path="/productos/parihuelas" element={<Parihuelas/>}/>
+        <Route path="/productos/durmientes" element={<Durmientes/>}/>
+        <Route path="/productos/postes" element={<Postes/>}/>
+
+        <Route path="/servicios/cortes" element={<Cortes/>}/>
+        <Route path="/servicios/termico" element={<Termico/>}/>
+        <Route path="/servicios/preventivo" element={<Preventivo/>}/>
+
+        {/* Página no encontrada */}
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
+
+      {/* ✅ Botón flotante de WhatsApp */}
+      <a
+        href="https://wa.me/51966776467" 
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          position: "fixed",
+          bottom: "20px",
+          right: "20px",
+          backgroundColor: "#25D366",
+          color: "white",
+          borderRadius: "50%",
+          width: "60px",
+          height: "60px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          fontSize: "30px",
+          boxShadow: "0 2px 10px rgba(0,0,0,0.3)",
+          zIndex: 1000,
+        }}
+      >
+        <i className="fab fa-whatsapp"></i>
+      </a>
     </>
   );
 }

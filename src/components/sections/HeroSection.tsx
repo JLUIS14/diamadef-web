@@ -8,7 +8,7 @@ export const HeroSection = () => (
     </p>
     <a
       href="#productos"
-      className="inline-block px-8 py-3 bg-white text-green-800 font-semibold rounded-full shadow hover:bg-green-100 transition"
+      className="inline-block px-8 py-3 bg-white text-green-800 font-semibold rounded-full shadow hover:bg-yellow-300 transition"
     >
       Explora nuestros productos
     </a>

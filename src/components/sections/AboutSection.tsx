@@ -12,14 +12,14 @@ const AboutSection = () => {
             <img
               src="/images/about.jpg"
               alt="Nuestro equipo de trabajo"
-              className="rounded-2xl shadow-lg w-full max-w-md object-cover"
+              className="rounded-3xl shadow-lg w-[700px] object-cover"
             />
           </div>
        
           <div className="md:w-1/2">
             <h2 className="text-3xl font-bold text-green-900 mb-4">Sobre Nosotros</h2>
             <p className="text-lg text-gray-800 mb-4 text-justify">
-              <b>Diamadef</b> Somos apasionados por la madera y la naturaleza. Nos dedicamos a la fabricación y comercialización de productos en madera de alta calidad, combinando tradición, innovación y respeto por el medio ambiente.
+              En <b>Diamadef</b> somos apasionados por la madera y la naturaleza. Nos dedicamos a la fabricación y comercialización de productos en madera de alta calidad, combinando tradición, innovación y respeto por el medio ambiente.
             </p>
             <p className="text-lg text-gray-800 text-justify">
               Nuestro equipo trabaja con integridad comprometido en brindar soluciones efectivas que satisfacen a nuestros clientes destacando por nuestros valores y el cuidado del entorno.
@@ -33,14 +33,13 @@ const AboutSection = () => {
           <div>
             <div className="mb-6">
               <span className="block text-xl font-bold text-green-900 mb-2">Misión:</span>{" "}
-              <p className="text-lg text-justify text gray-800">Brindar productos y servicios de madera que inspiren confianza superando las expectativas de nuestros clientes,
-              contribuyendo al desarrollo sostenible y la excelencia en cada proyecto.
+              <p className="text-lg text-justify text gray-800">Brindar productos y servicios de madera que se adapten a las necesidades de cada cliente, garantizando calidad, soporte técnico especializado y soluciones innovadoras que superen sus expectativas, contribuyendo al desarrollo sostenible y a la excelencia en cada obra y emprendimiento.
               </p>
             </div>
             <div className="mb-4">
               <span className="block text-xl font-bold text-green-900 mb-2">Visión:</span>{" "}
               <p className="text-lg text-justify text gray-800">
-              Convertirnos en el principal socio estratégico, confiable y ágil en soluciones de madera de nuestros clientes, brindando soporte técnico y asesoría permanente en cada proyecto con innovación y responsabilidad ambiental.
+              Consolidarnos como la empresa líder y confiable en soluciones integrales de madera, destacando por nuestra competitividad, innovación y compromiso ambiental. Convirtiéndonos en el principal socio estratégico de nuestros clientes, brindando soporte técnico y asesoría permanente que impulse el éxito de cada proyecto.
               </p>
             </div>
             <div className="my-6">

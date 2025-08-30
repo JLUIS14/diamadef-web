@@ -13,7 +13,7 @@ export default function SloganBanner() {
         <h1 className="text-2xl md:text-4xl font-extrabold text-yellow-200 drop-shadow-lg">
           Diamadef Inspirando Proyectos, Creando un Futuro Sostenible
         </h1>
-        {/* Puedes agregar un botón aquí si quieres */}
+        {/* Se puede agregar un botón aquí si fuera necesario */}
       </div>
     </section>
   );

@@ -5,7 +5,7 @@ import { productsMenu, ProductMenuItem, SubmenuItem } from "../../constants/prod
 
 // Servicios definidos directamente (o puedes usar un archivo similar a productsMenu)
 const servicesMenu = [
-  { name: "Servicio de cortes", path: "/servicios/cortes" },
+  { name: "Servicio de Cortes", path: "/servicios/Cortes" },
   { name: "Tratamiento Térmico", path: "/servicios/termico" },
  
   { name: "Tratamiento Preventivo", path: "/servicios/preventivo" },

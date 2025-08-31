@@ -36,7 +36,7 @@ import Parihuelas from "./pages/productos/Parihuelas";
 import Durmientes from "./pages/productos/Durmientes";
 import Postes from "./pages/productos/Postes";
 
-import Cortes from "./pages/servicios/cortes";
+import Cortes from "./pages/servicios/Cortes";
 import Termico from "./pages/servicios/Termico";
 import Preventivo from "./pages/servicios/Preventivo";
 
@@ -80,7 +80,7 @@ export default function App() {
         <Route path="/productos/durmientes" element={<Durmientes/>}/>
         <Route path="/productos/postes" element={<Postes/>}/>
 
-        <Route path="/servicios/cortes" element={<Cortes/>}/>
+        <Route path="/servicios/Cortes" element={<Cortes/>}/>
         <Route path="/servicios/termico" element={<Termico/>}/>
         <Route path="/servicios/preventivo" element={<Preventivo/>}/>
 

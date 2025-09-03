@@ -11,7 +11,7 @@ const posts: Record<
 > = {
   "1": {
     title: "Cómo elegir la mejor madera para tu proyecto",
-    image: "/images/blog/madera.jpg",
+    image: "/images/blog/maderas.jpg",
     content: `
       La elección de la madera adecuada depende del tipo de proyecto que tengas en mente.
      

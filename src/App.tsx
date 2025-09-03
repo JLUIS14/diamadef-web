@@ -2,6 +2,7 @@ import { Navbar } from "./components/layout/Navbar";
 import { Footer } from "./components/layout/Footer";
 import { Routes, Route } from "react-router-dom";
 import NotFound from "./pages/NotFound";
+import ScrollToTop from "./components/ScrollToTop"; // ✅ Importa ScrollToTop
 
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -25,8 +26,8 @@ import Eucalipto from "./pages/productos/maderas/Eucalipto";
 import Higuerilla from "./pages/productos/maderas/Higuerilla";
 
 import Okoume from "./pages/productos/triplay/Okoume";
-import Bintangor from "./pages/productos/triplay/Bintangor"
-import Lupuna from "./pages/productos/triplay/Lupuna"
+import Bintangor from "./pages/productos/triplay/Bintangor";
+import Lupuna from "./pages/productos/triplay/Lupuna";
 import Fenolico from "./pages/productos/triplay/Fenolico-bc";
 import FenolicoDobleFilm from "./pages/productos/triplay/Fenolico-doble-film";
 import Osb from "./pages/productos/triplay/OSB";
@@ -44,6 +45,7 @@ export default function App() {
   return (
     <>
       <Navbar />
+      <ScrollToTop /> {/* ✅ Hace scroll al inicio en cada ruta */}
       <Routes>
         {/* Rutas principales */}
         <Route path="/" element={<Home />} />
@@ -61,28 +63,31 @@ export default function App() {
         <Route path="/productos/maderas/cachimbo" element={<Cachimbo />} />
         <Route path="/productos/maderas/panguana" element={<Panguana />} />
         <Route path="/productos/maderas/copaiba" element={<Copaiba />} />
-        <Route path="/productos/maderas/roble" element={<Roble/>}/>
-        <Route path="/productos/maderas/bolaina" element={<Bolaina/>}/>
-        <Route path="/productos/maderas/huayruro" element={<Huayruro/>}/>
-        <Route path="/productos/maderas/moena" element={<Moena/>}/>
-        <Route path="/productos/maderas/eucalipto" element={<Eucalipto/>}/>
-        <Route path="/productos/maderas/higuerilla" element={<Higuerilla/>}/>
+        <Route path="/productos/maderas/roble" element={<Roble />} />
+        <Route path="/productos/maderas/bolaina" element={<Bolaina />} />
+        <Route path="/productos/maderas/huayruro" element={<Huayruro />} />
+        <Route path="/productos/maderas/moena" element={<Moena />} />
+        <Route path="/productos/maderas/eucalipto" element={<Eucalipto />} />
+        <Route path="/productos/maderas/higuerilla" element={<Higuerilla />} />
 
-        <Route path="/productos/triplay/okoume" element={<Okoume/>}/>
-        <Route path="/productos/triplay/bintangor" element={<Bintangor/>}/>
-        <Route path="/productos/triplay/lupuna" element={<Lupuna/>}/>
-        <Route path="/productos/triplay/fenolico-bc" element={<Fenolico/>}/>
-        <Route path="/productos/triplay/fenolico-doble-film" element={<FenolicoDobleFilm/>}/>
-        <Route path="/productos/triplay/osb" element={<Osb/>}/>
-        <Route path="/productos/triplay/mdf" element={<Mdf/>}/>
+        {/* Triplay */}
+        <Route path="/productos/triplay/okoume" element={<Okoume />} />
+        <Route path="/productos/triplay/bintangor" element={<Bintangor />} />
+        <Route path="/productos/triplay/lupuna" element={<Lupuna />} />
+        <Route path="/productos/triplay/fenolico-bc" element={<Fenolico />} />
+        <Route path="/productos/triplay/fenolico-doble-film" element={<FenolicoDobleFilm />} />
+        <Route path="/productos/triplay/osb" element={<Osb />} />
+        <Route path="/productos/triplay/mdf" element={<Mdf />} />
 
-        <Route path="/productos/parihuelas" element={<Parihuelas/>}/>
-        <Route path="/productos/durmientes" element={<Durmientes/>}/>
-        <Route path="/productos/postes" element={<Postes/>}/>
+        {/* Otros productos */}
+        <Route path="/productos/parihuelas" element={<Parihuelas />} />
+        <Route path="/productos/durmientes" element={<Durmientes />} />
+        <Route path="/productos/postes" element={<Postes />} />
 
-        <Route path="/servicios/Cortes" element={<Cortes/>}/>
-        <Route path="/servicios/termico" element={<Termico/>}/>
-        <Route path="/servicios/preventivo" element={<Preventivo/>}/>
+        {/* Servicios */}
+        <Route path="/servicios/cortes" element={<Cortes />} />
+        <Route path="/servicios/termico" element={<Termico />} />
+        <Route path="/servicios/preventivo" element={<Preventivo />} />
 
         {/* Página no encontrada */}
         <Route path="*" element={<NotFound />} />
@@ -91,7 +96,7 @@ export default function App() {
 
       {/* ✅ Botón flotante de WhatsApp */}
       <a
-        href="https://wa.me/51966776467" 
+        href="https://wa.me/51966776467"
         target="_blank"
         rel="noopener noreferrer"
         style={{

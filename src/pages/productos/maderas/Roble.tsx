@@ -20,11 +20,11 @@ export default function Roble() {
           <p className="text-lg text-gray-800 leading-relaxed text-justify">
             La <strong>madera de roble</strong> (<em>Quercus spp.</em>), 
             especialmente especies como el roble blanco (<em>Quercus alba</em>) o el roble europeo, 
-            es una madera dura, pesada o semipesada, apreciada por su 
-            durabilidad, resistencia a la humedad 
-            y belleza natural en tonos que varían entre claro y marrón.  
-            Tradicionalmente usada en ebanistería, carpintería fina, construcción naval, 
-            tonelería y estructuras por su alta durabilidad natural.
+            es una madera semipesada, apreciada por su 
+            versatilidad de usos, pero que requiere un tratamiento para su durabilidad 
+            y su aspecto en tonos varían entre claro y marrón.  
+            Tradicionalmente usada en ebanistería, carpintería fina, construcción, 
+            tonelería y estructuras.
           </p>
         </div>
 
@@ -37,11 +37,11 @@ export default function Roble() {
               Características principales
             </h2>
             <ul className="list-disc list-inside text-gray-700">
-              <li>Densidad: entre 700 y 770 kg/m³ </li>
+              <li>Densidad: entre 450 y 550 kg/m³ </li>
               <li>Grano: recto, textura gruesa y vetas marcadas</li>
-              <li>Resistencia a la humedad: destacada, ideal para exteriores</li>
-              <li>Durabilidad natural: muy alta, resistente a hongos e insectos</li>
-              <li>Estética: tonos marrones a rojizos que adquieren pátina con el tiempo</li>
+              <li>Resistencia a la humedad: relativa, ideal para estructuras</li>
+              <li>Durabilidad natural: normal, poca resistencia a hongos e insectos</li>
+              <li>Estética: tonos claro a marrón que adquieren pátina con el tiempo</li>
             </ul>
           </div>
 
@@ -77,18 +77,18 @@ export default function Roble() {
             </thead>
             <tbody>
               {[
-                ["Densidad (aproximada)", "0,71", "g/cm³", "Madera pesada/semipesada."],
-                ["Resistencia a la flexión (MOR)", "500", "kg/cm²", "Alta resistencia a rotura en flexión."],
-                ["Módulo de elasticidad (MOE)", "79", "tn/cm²", "Rígida frente a deformaciones."],
-                ["Compresión paralela", "288", "kg/cm²", "Buena capacidad de carga axial."],
-                ["Corte paralelo (shear)", "69", "kg/cm²", "Resistencia moderada al cizallamiento."],
+                ["Densidad (aproximada)", "0,51", "g/cm³", "Madera liviana/semipesada."],
+                ["Resistencia a la flexión (MOR)", "520", "kg/cm²", "Buena resistencia a rotura en flexión."],
+                ["Módulo de elasticidad (MOE)", "85", "tn/cm²", "Rígida frente a deformaciones."],
+                ["Compresión paralela", "270", "kg/cm²", "Buena capacidad de carga axial."],
+                ["Corte paralelo (shear)", "59", "kg/cm²", "Resistencia moderada al cizallamiento."],
                 ["Compresión perpendicular", "36", "kg/cm²", "Menor resistencia transversal."],
-                ["Dureza lateral", "283", "kg/cm²", "Superficie dura, pero no extremadamente rígida."],
-                ["Tenacidad (impacto)", "1,9", "kg/cm·cm?", "Resistencia moderada al choque."],
-                ["Resistencia a flexión (otro dato)", "1070", "kg/cm²", "Alta, en madera libre de defectos."],
-                ["Resistencia a compresión", "580", "kg/cm²", "Elevada resistencia estructural."],
-                ["Resistencia a tracción", "1070", "kg/cm²", "Muy alta resistencia a tensión."],
-                ["Módulo de elasticidad (otro)", "115 000", "kg/cm²", "Rango alto de rigidez."]
+                ["Dureza lateral", "270", "kg/cm²", "Superficie dura, pero no extremadamente rígida."],
+                ["Tenacidad (impacto)", "1,7", "kg/cm·cm?", "Resistencia moderada al choque."],
+                ["Resistencia a flexión (otra fuente)", "970", "kg/cm²", "Alta, en madera libre de defectos."],
+                ["Resistencia a compresión", "580", "kg/cm²", "Buena resistencia estructural."],
+                ["Resistencia a tracción", "990", "kg/cm²", "Muy alta resistencia a tensión."],
+                ["Módulo de elasticidad (otra fuente)", "115", "ton/cm²", "Rango alto de rigidez."]
               ].map((row, index) => (
                 <tr key={index} className={index % 2 === 0 ? "bg-white" : "bg-gray-100"}>
                   {row.map((cell, i) => (

@@ -14,8 +14,8 @@ const posts: Record<
     image: "/images/blog/madera.jpg",
     content: `
       La elección de la madera adecuada depende del tipo de proyecto que tengas en mente.
-      Por ejemplo, para exteriores se recomienda usar maderas duras y resistentes como el cedro o el roble.
-      Mientras que para interiores, puedes usar pino o MDF.
+     
+      Para elegir la mejor madera, considera factores clave como el uso y la durabilidad que requiere tu proyecto (exterior vs. interior), la estética deseada (color, veta), la facilidad de trabajo, la estabilidad frente a humedad y temperatura, tu presupuesto y si buscas opciones sostenibles. Cada especie tiene características únicas, por lo que elegir la madera adecuada implica equilibrar estos factores para lograr el resultado que buscas. 
     `,
     video: "https://www.youtube.com/embed/ScMzIvxBSi4",
   },
@@ -25,6 +25,7 @@ const posts: Record<
     content: `
       Los tratamientos ignífugos y preventivos permiten extender la vida útil de la madera.
       Además, reducen riesgos de plagas y problemas de humedad.
+      El tratamiento preventivo de la madera se enfoca en protegerla contra hongos, insectos, humedad y luz solar antes de que sufra daños, mediante métodos como la inmersión en químicos, el curado con aceites, la aplicación de lasures, la técnica de carbonizado (Shou-Sugi-Ban) o el uso de productos específicos. La preparación adecuada de la superficie, que incluye limpieza y secado, es un paso crucial para la efectividad del tratamiento
     `,
     video: "",
   },

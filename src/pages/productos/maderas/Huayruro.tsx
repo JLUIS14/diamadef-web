@@ -1,10 +1,69 @@
-import React from "react";
+import React, { useRef } from "react";
+import html2canvas from "html2canvas";
+import jsPDF from "jspdf";
 
 export default function Huayruro() {
+  const pdfRef = useRef<HTMLDivElement>(null);
+
+  const generatePDF = async () => {
+    const element = pdfRef.current;
+    if (!element) return;
+
+    // Capturar el contenido en canvas
+    const canvas = await html2canvas(element, { scale: 2 });
+    const imgData = canvas.toDataURL("image/png");
+
+    // Crear PDF
+    const pdf = new jsPDF("p", "mm", "a4");
+
+    // Ruta del logo (ubicado en /public/images/logo.png)
+    const logo = "/images/logo.png";
+
+    // Medidas de la página
+    const pageWidth = pdf.internal.pageSize.getWidth();
+    const pageHeight = pdf.internal.pageSize.getHeight();
+
+    // 📌 Insertar logo centrado arriba
+    const logoWidth = 40; // ancho del logo en mm
+    const logoHeight = 20; // alto del logo en mm
+    const logoX = (pageWidth - logoWidth) / 2;
+    const logoY = 10; // margen superior
+    pdf.addImage(logo, "PNG", logoX, logoY, logoWidth, logoHeight);
+
+    // 📌 Márgenes del contenido
+    const marginX = 15;
+    const marginY = 40; // dejamos espacio para el logo
+    const contentWidth = pageWidth - marginX * 2;
+
+    // Ajuste de proporción de la imagen
+    const imgProps = (pdf as any).getImageProperties(imgData);
+    const contentHeight = (imgProps.height * contentWidth) / imgProps.width;
+
+    pdf.addImage(
+      imgData,
+      "PNG",
+      marginX,
+      marginY,
+      contentWidth,
+      contentHeight > pageHeight - marginY ? pageHeight - marginY : contentHeight
+    );
+
+    // Guardar PDF
+    pdf.save("Madera-Huayruro.pdf");
+  };
+
   return (
     <div className="bg-[#f9f7f3] min-h-screen p-6">
-      <div className="max-w-6xl mx-auto">
-        
+      {/* Botón PDF */}
+      <button
+        onClick={generatePDF}
+        className="bg-green-600 text-white px-4 py-2 rounded-md shadow-md mb-4 hover:bg-green-700 transition"
+      >
+        Descargar PDF
+      </button>
+
+      {/* Contenido a exportar */}
+      <div ref={pdfRef} className="max-w-6xl mx-auto">
         {/* Título */}
         <h1 className="text-4xl font-bold text-green-700 mb-6">
           Madera Huayruro
@@ -31,7 +90,6 @@ export default function Huayruro() {
 
         {/* Características y Usos */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-          
           {/* Características */}
           <div className="bg-green-100 border-l-4 border-green-700 p-4 rounded-lg">
             <h2 className="text-2xl font-semibold text-green-800 mb-2">
@@ -59,7 +117,6 @@ export default function Huayruro() {
               <li>Otros: pisos machihembrados, canoas, artesanías.</li>
             </ul>
           </div>
-
         </div>
 
         {/* Especificaciones técnicas */}
@@ -100,7 +157,6 @@ export default function Huayruro() {
             </tbody>
           </table>
         </div>
-
       </div>
     </div>
   );

@@ -46,57 +46,64 @@ export default function App() {
     <>
       <Navbar />
       <ScrollToTop /> {/* ✅ Hace scroll al inicio en cada ruta */}
-      <Routes>
-        {/* Rutas principales */}
-        <Route path="/" element={<Home />} />
-        <Route path="/nosotros" element={<About />} />
-        <Route path="/productos" element={<Products />} />
-        <Route path="/servicios" element={<Services />} />
-        <Route path="/galeria" element={<Gallery />} />
-        <Route path="/clientes" element={<Clients />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/:id" element={<Post />} />
-        <Route path="/contacto" element={<Contact />} />
 
-        {/* Ruta específica para Maderas */}
-        <Route path="/productos/maderas/tornillo" element={<Tornillo />} />
-        <Route path="/productos/maderas/cachimbo" element={<Cachimbo />} />
-        <Route path="/productos/maderas/panguana" element={<Panguana />} />
-        <Route path="/productos/maderas/copaiba" element={<Copaiba />} />
-        <Route path="/productos/maderas/roble" element={<Roble />} />
-        <Route path="/productos/maderas/bolaina" element={<Bolaina />} />
-        <Route path="/productos/maderas/huayruro" element={<Huayruro />} />
-        <Route path="/productos/maderas/moena" element={<Moena />} />
-        <Route path="/productos/maderas/eucalipto" element={<Eucalipto />} />
-        <Route path="/productos/maderas/higuerilla" element={<Higuerilla />} />
+      {/* ✅ Contenedor principal con padding superior para no ocultar el contenido detrás del navbar fijo */}
+      <main className="pt-24">
+        <Routes>
+          {/* Rutas principales */}
+          <Route path="/" element={<Home />} />
+          <Route path="/nosotros" element={<About />} />
+          <Route path="/productos" element={<Products />} />
+          <Route path="/servicios" element={<Services />} />
+          <Route path="/galeria" element={<Gallery />} />
+          <Route path="/clientes" element={<Clients />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<Post />} />
+          <Route path="/contacto" element={<Contact />} />
 
-        {/* Triplay */}
-        <Route path="/productos/triplay/okoume" element={<Okoume />} />
-        <Route path="/productos/triplay/bintangor" element={<Bintangor />} />
-        <Route path="/productos/triplay/lupuna" element={<Lupuna />} />
-        <Route path="/productos/triplay/fenolico-bc" element={<Fenolico />} />
-        <Route path="/productos/triplay/fenolico-doble-film" element={<FenolicoDobleFilm />} />
-        <Route path="/productos/triplay/osb" element={<Osb />} />
-        <Route path="/productos/triplay/mdf" element={<Mdf />} />
+          {/* Ruta específica para Maderas */}
+          <Route path="/productos/maderas/tornillo" element={<Tornillo />} />
+          <Route path="/productos/maderas/cachimbo" element={<Cachimbo />} />
+          <Route path="/productos/maderas/panguana" element={<Panguana />} />
+          <Route path="/productos/maderas/copaiba" element={<Copaiba />} />
+          <Route path="/productos/maderas/roble" element={<Roble />} />
+          <Route path="/productos/maderas/bolaina" element={<Bolaina />} />
+          <Route path="/productos/maderas/huayruro" element={<Huayruro />} />
+          <Route path="/productos/maderas/moena" element={<Moena />} />
+          <Route path="/productos/maderas/eucalipto" element={<Eucalipto />} />
+          <Route path="/productos/maderas/higuerilla" element={<Higuerilla />} />
 
-        {/* Otros productos */}
-        <Route path="/productos/parihuelas" element={<Parihuelas />} />
-        <Route path="/productos/durmientes" element={<Durmientes />} />
-        <Route path="/productos/postes" element={<Postes />} />
+          {/* Triplay */}
+          <Route path="/productos/triplay/okoume" element={<Okoume />} />
+          <Route path="/productos/triplay/bintangor" element={<Bintangor />} />
+          <Route path="/productos/triplay/lupuna" element={<Lupuna />} />
+          <Route path="/productos/triplay/fenolico-bc" element={<Fenolico />} />
+          <Route path="/productos/triplay/fenolico-doble-film" element={<FenolicoDobleFilm />} />
+          <Route path="/productos/triplay/osb" element={<Osb />} />
+          <Route path="/productos/triplay/mdf" element={<Mdf />} />
 
-        {/* Servicios */}
-        <Route path="/servicios/cortes" element={<Cortes />} />
-        <Route path="/servicios/termico" element={<Termico />} />
-        <Route path="/servicios/preventivo" element={<Preventivo />} />
+          {/* Otros productos */}
+          <Route path="/productos/parihuelas" element={<Parihuelas />} />
+          <Route path="/productos/durmientes" element={<Durmientes />} />
+          <Route path="/productos/postes" element={<Postes />} />
 
-        {/* Página no encontrada */}
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+          {/* Servicios */}
+          <Route path="/servicios/cortes" element={<Cortes />} />
+          <Route path="/servicios/termico" element={<Termico />} />
+          <Route path="/servicios/preventivo" element={<Preventivo />} />
+
+          {/* Página no encontrada */}
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </main>
+
       <Footer />
 
-      {/* ✅ Botón flotante de WhatsApp */}
+      {/* ✅ Botón flotante de WhatsApp con mensaje de bienvenida */}
       <a
-        href="https://wa.me/51966776467"
+        href={`https://wa.me/51966776467?text=${encodeURIComponent(
+          "👋 ¡Hola! Bienvenido a Diamadef. Estamos atentos para responder tu consulta."
+        )}`}
         target="_blank"
         rel="noopener noreferrer"
         style={{

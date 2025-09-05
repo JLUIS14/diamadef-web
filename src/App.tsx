@@ -3,6 +3,7 @@ import { Footer } from "./components/layout/Footer";
 import { Routes, Route } from "react-router-dom";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop"; // ✅ Importa ScrollToTop
+import { useEffect, useState } from "react";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -42,6 +43,21 @@ import Termico from "./pages/servicios/Termico";
 import Preventivo from "./pages/servicios/Preventivo";
 
 export default function App() {
+  // ✅ Mensajes dinámicos para el botón de WhatsApp
+  const mensajes = ["¡Escríbenos!", "Estamos en línea", "Chatea con nosotros"];
+  const [texto, setTexto] = useState(mensajes[0]);
+
+  useEffect(() => {
+    const intervalo = setInterval(() => {
+      setTexto((prev) => {
+        const index = mensajes.indexOf(prev);
+        return mensajes[(index + 1) % mensajes.length];
+      });
+    }, 3000); // cambia cada 3 segundos
+
+    return () => clearInterval(intervalo);
+  }, []);
+
   return (
     <>
       <Navbar />
@@ -99,7 +115,7 @@ export default function App() {
 
       <Footer />
 
-      {/* ✅ Botón flotante de WhatsApp con mensaje de bienvenida */}
+      {/* ✅ Botón flotante de WhatsApp con mensaje dinámico */}
       <a
         href={`https://wa.me/51966776467?text=${encodeURIComponent(
           "👋 ¡Hola! Bienvenido a Diamadef. Estamos atentos para responder tu consulta."
@@ -110,20 +126,23 @@ export default function App() {
           position: "fixed",
           bottom: "20px",
           right: "20px",
-          backgroundColor: "#25D366",
-          color: "white",
-          borderRadius: "50%",
-          width: "60px",
-          height: "60px",
           display: "flex",
           alignItems: "center",
-          justifyContent: "center",
-          fontSize: "30px",
+          gap: "10px",
+          backgroundColor: "#25D366",
+          color: "white",
+          borderRadius: "30px",
+          padding: "10px 15px",
+          fontSize: "16px",
+          fontWeight: "bold",
+          textDecoration: "none",
           boxShadow: "0 2px 10px rgba(0,0,0,0.3)",
           zIndex: 1000,
+          transition: "all 0.3s ease-in-out",
         }}
       >
-        <i className="fab fa-whatsapp"></i>
+        <i className="fab fa-whatsapp" style={{ fontSize: "24px" }}></i>
+        <span>{texto}</span>
       </a>
     </>
   );

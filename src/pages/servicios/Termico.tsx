@@ -15,7 +15,7 @@ export default function Termico() {
             <p className="text-gray-700 leading-relaxed text-justify">
               El tratamiento térmico de la madera es un proceso de modificación física mediante la
               aplicación controlada de calor en atmósferas especiales (aire, vapor, nitrógeno u
-              otros), con temperaturas que varían entre 160 °C y 250 °C, cuyo objetivo es mejorar la
+              otros), se debe mantener a una temperatura promedio de 56° por un periodo de 30 minutos para que el calor pueda propagarse a todas las capas de la madera eliminando cualquier organismo vivo, cuyo objetivo es mejorar la
               estabilidad dimensional, resistencia biológica y durabilidad natural de la madera sin
               necesidad de productos químicos.
             </p>
@@ -131,8 +131,8 @@ export default function Termico() {
                 </thead>
                 <tbody className="bg-white">
                   {[
-                    ["Rango de temperatura", "160 – 250", "°C", "Según especie y uso final"],
-                    ["Tiempo de exposición", "2 – 8", "horas", "Depende del grosor y método"],
+                    ["Rango de temperatura", "56", "°C", "Según especie y uso final"],
+                    ["Tiempo de exposición", "30", "min", "Depende del grosor y método"],
                     ["Atmósfera de tratamiento", "Aire, vapor, nitrógeno", "–", "Evita combustión y oxidación"],
                     ["Contenido de humedad final", "4 – 6", "%", "Muy bajo comparado con 12–18 % natural"],
                     ["Color resultante", "Marrón claro a oscuro", "–", "Homogéneo, similar a tropicales"],

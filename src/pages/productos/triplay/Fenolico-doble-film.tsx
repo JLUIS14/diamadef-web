@@ -96,7 +96,7 @@ export default function FenolicoDobleFilm() {
             </thead>
             <tbody>
               {[
-                ["Tamaño estándar", "1.22 × 2.44 × 18", "m / mm", "Disponible en espesores: 9, 12, 15, 21 mm"],
+                ["Tamaño estándar", "1.22 × 2.44 × 18", "m / mm", "Tambien existe en espesores: 12, 15, 17 mm"],
                 ["Color de film", "Marrón", "—", "Película fenólica con textura hexagonal antideslizante"],
                 ["Gramaje del film", "180", "g/m²", "Capa protectora prensada en caliente"],
                 ["Adhesivo", "WBP", "—", "Resistente al agua y ebullición"],

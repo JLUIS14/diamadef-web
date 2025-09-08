@@ -24,7 +24,7 @@ export default function Clients() {
           Nuestros Clientes
         </h1>
         <p className="text-lg text-blue-600 mb-10">
-          <strong>Algunas empresas que confían en nosotros.</strong>
+          <strong>...</strong>
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">

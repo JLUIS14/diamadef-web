@@ -39,7 +39,7 @@ export const HeroSection = () => {
           Bienvenido a Inversiones Diamadef
         </h1>
         <p className="text-lg md:text-2xl text-yellow-300 mb-8 max-w-2xl mx-auto text-center drop-shadow animate-fadeInUp-delay1 bg-black bg-opacity-10 p-2 rounded">
-          Diseñamos productos únicos en madera con responsabilidad ambiental y
+          Distribuimos productos únicos en madera con responsabilidad ambiental y
           calidad garantizada.
         </p>
         <a

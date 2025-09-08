@@ -14,10 +14,10 @@ export default function Contact() {
 
     emailjs
       .sendForm(
-        "service_hp22fhb",   // 👈 reemplaza con tu Service ID
-        "template_3vgv4nf",  // 👈 reemplaza con tu Template ID
+        "service_hp22fhb",   //  Service ID
+        "template_3vgv4nf",  //  Template ID
         form.current,
-        "7LSzM5pC_gcv9Sg9b"    // 👈 reemplaza con tu Public Key
+        "7LSzM5pC_gcv9Sg9b"    //  Public Key
       )
       .then(
         () => {
@@ -36,7 +36,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="max-w-3xl mx-auto p-6">
+    <div className="max-w-4xl mx-auto p-6">
       <h1 className="text-4xl font-bold text-green-800 mb-6">Contacto</h1>
       <p className="text-gray-600 mb-8">
         Ponte en contacto con nosotros llenando el formulario o vía WhatsApp.
@@ -99,8 +99,8 @@ export default function Contact() {
 
       <div className="mt-10 text-gray-700">
         <h2 className="text-2xl font-bold mb-3">Otros medios de contacto</h2>
-        <p>📞 Teléfono: +51 946 917 999</p>
-        <p>✉️ Email: adm.diamadef@gmail.com</p>
+        <p>📞 Teléfonos: +51 946 917 999  ,  +51 966 776 467</p>
+        <p>✉️ Email: ventas@diamadef.com</p>
         <p>
           💬 WhatsApp:{" "}
           <a
@@ -116,3 +116,5 @@ export default function Contact() {
     </div>
   );
 }
+
+

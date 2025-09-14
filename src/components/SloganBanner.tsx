@@ -10,7 +10,7 @@ export default function SloganBanner() {
         className="absolute inset-0 w-full h-full object-cover opacity-80"
       />
       <div className="relative z-10 text-center">
-        <h1 className="text-2xl md:text-4xl font-extrabold text-yellow-200 drop-shadow-lg">
+        <h1 className="text-2xl md:text-4xl font-extrabold text-white drop-shadow-lg">
           Diamadef Inspirando Proyectos, Creando un Futuro Sostenible
         </h1>
         {/* Se puede agregar un botón aquí si fuera necesario */}

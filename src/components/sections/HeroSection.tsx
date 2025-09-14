@@ -35,16 +35,16 @@ export const HeroSection = () => {
 
       {/* Contenido */}
       <div className="relative z-10">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-yellow-400 drop-shadow mb-4 opacity-0 animate-fadeInUp">
+        <h1 className="text-5xl md:text-6xl font-extrabold text-white drop-shadow mb-4 opacity-0 animate-fadeInUp">
           Bienvenido a Inversiones Diamadef
         </h1>
-        <p className="text-lg md:text-2xl text-yellow-300 mb-8 max-w-2xl mx-auto text-center drop-shadow animate-fadeInUp-delay1 bg-black bg-opacity-10 p-2 rounded">
-          Distribuimos productos únicos en madera con responsabilidad ambiental y
+        <p className="text-lg md:text-3xl text-white mb-8 max-w-2xl mx-auto text-center drop-shadow animate-fadeInUp-delay1 bg-black bg-opacity-10 p-2 rounded">
+          Distribuimos productos únicos en <strong> madera</strong> con responsabilidad ambiental y
           calidad garantizada.
         </p>
         <a
           href="#productos"
-          className="inline-block px-8 py-3 bg-white text-green-800 font-semibold rounded-full shadow hover:bg-yellow-300 transition opacity-0 animate-fadeInUp-delay2"
+          className="inline-block px-8 py-3 bg-white text-green-800 font-semibold text-xl rounded-full shadow hover:bg-yellow-300 transition opacity-0 animate-fadeInUp-delay2"
         >
           Explora nuestros productos
         </a>

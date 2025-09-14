@@ -28,7 +28,7 @@ export default function Blog() {
       <div className="mb-6 aspect-video">
         <iframe
           className="w-full h-full rounded-lg shadow-lg"
-          src="https://www.youtube.com/embed/5s3urvpX3FM"
+          src="https://www.youtube.com/embed/i2myQ1gG0X0"
           title="Video Institucional Diamadef"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

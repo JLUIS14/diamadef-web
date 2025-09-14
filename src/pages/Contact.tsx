@@ -102,15 +102,17 @@ export default function Contact() {
         <p>📞 Teléfonos: +51 946 917 999  ,  +51 966 776 467</p>
         <p>✉️ Email: ventas@diamadef.com</p>
         <p>
-          💬 WhatsApp:{" "}
-          <a
-            href="https://wa.me/51989681817"
-            target="_blank"
-            className="text-green-600 font-semibold hover:underline"
-          >
+      💬 WhatsApp:{" "}
+         <a
+           href="https://wa.me/51946917999?text=%C2%A1Hola!%20Bienvenido%20a%20Diamadef.%20Estamos%20atentos%20para%20responder%20tu%20consulta."
+           target="_blank"
+            rel="noopener noreferrer"
+           className="text-green-600 font-semibold hover:underline"
+            >
             Escríbenos por WhatsApp
           </a>
-        </p>
+          </p>
+
         <p>📍 Dirección: Av. Gerardo Unger 6355, SMP - Lima - Perú</p>
       </div>
     </div>

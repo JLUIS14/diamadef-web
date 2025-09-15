@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo-diamadef.png";
@@ -41,7 +42,10 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-green-800 to-green-400 shadow-lg px-4 py-2 flex items-center justify-between">
+    <nav
+      id="navbar"
+      className="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-green-700 to-green-400 shadow-lg px-4 py-2 flex items-center justify-between"
+    >
       <div className="flex items-center">
         {/* Logo */}
         <Link to="/" className="flex items-center">
@@ -53,7 +57,7 @@ export const Navbar = () => {
           />
         </Link>
 
-        {/* Redes junto al logo (aparecen al lado del logo en pantallas >= md) */}
+        {/* Redes junto al logo */}
         <div className="hidden md:flex items-center gap-2 ml-4">
           {/* LinkedIn */}
           <a
@@ -67,7 +71,6 @@ export const Navbar = () => {
           >
             <i className="fab fa-linkedin-in"></i>
           </a>
-
           {/* Facebook */}
           <a
             href={socialLinks.facebook}
@@ -80,8 +83,7 @@ export const Navbar = () => {
           >
             <i className="fab fa-facebook-f"></i>
           </a>
-
-          {/* Instagram (gradient) */}
+          {/* Instagram */}
           <a
             href={socialLinks.instagram}
             target="_blank"
@@ -96,7 +98,6 @@ export const Navbar = () => {
           >
             <i className="fab fa-instagram"></i>
           </a>
-
           {/* YouTube */}
           <a
             href={socialLinks.youtube}
@@ -109,7 +110,6 @@ export const Navbar = () => {
           >
             <i className="fab fa-youtube"></i>
           </a>
-
           {/* TikTok */}
           <a
             href={socialLinks.tiktok}
@@ -125,7 +125,7 @@ export const Navbar = () => {
         </div>
       </div>
 
-      {/* Botón móvil (hamburger) */}
+      {/* Botón móvil */}
       <button
         className="md:hidden p-2 focus:outline-none z-50 relative"
         onClick={() => setOpen(!open)}
@@ -153,7 +153,7 @@ export const Navbar = () => {
           </button>
         </div>
 
-        {/* Redes en el sidebar (móvil) */}
+        {/* Redes en móvil */}
         <div className="p-4 flex gap-3">
           <a
             href={socialLinks.linkedin}
@@ -215,6 +215,7 @@ export const Navbar = () => {
           </a>
         </div>
 
+        {/* Links móviles */}
         <ul className="flex flex-col">
           {navLinks.map((link) => {
             if (link.name === "Productos") {
@@ -224,8 +225,7 @@ export const Navbar = () => {
                     className="w-full text-left px-4 py-3 font-semibold flex justify-between items-center"
                     onClick={() => setOpenProducts(!openProducts)}
                   >
-                    Productos
-                    <span>{openProducts ? "▲" : "▼"}</span>
+                    Productos <span>{openProducts ? "▲" : "▼"}</span>
                   </button>
                   {openProducts && (
                     <ul className="bg-green-800">
@@ -241,8 +241,10 @@ export const Navbar = () => {
                                   )
                                 }
                               >
-                                {item.label}
-                                <span>{submenuOpen === idx ? "▲" : "▶"}</span>
+                                {item.label}{" "}
+                                <span>
+                                  {submenuOpen === idx ? "▲" : "▶"}
+                                </span>
                               </button>
                               {submenuOpen === idx && (
                                 <ul className="bg-green-700">
@@ -284,8 +286,7 @@ export const Navbar = () => {
                     className="w-full text-left px-4 py-3 font-semibold flex justify-between items-center"
                     onClick={() => setOpenServices(!openServices)}
                   >
-                    Servicios
-                    <span>{openServices ? "▲" : "▼"}</span>
+                    Servicios <span>{openServices ? "▲" : "▼"}</span>
                   </button>
                   {openServices && (
                     <ul className="bg-green-800">
@@ -321,7 +322,7 @@ export const Navbar = () => {
         </ul>
       </div>
 
-      {/* Menú Desktop + (si se requiere) redes a la derecha */}
+      {/* Menú Desktop */}
       <div className="hidden md:flex items-center gap-6">
         <ul className="flex gap-2 items-center">
           {navLinks.map((link) => {
@@ -357,7 +358,7 @@ export const Navbar = () => {
                         {item.submenu ? (
                           <>
                             <span className="flex justify-between items-center px-4 py-2 cursor-pointer hover:bg-yellow-300">
-                              {item.label}
+                              {item.label}{" "}
                               <span className="ml-2 text-[10px]">▶</span>
                             </span>
                             <ul
@@ -438,11 +439,6 @@ export const Navbar = () => {
             );
           })}
         </ul>
-
-        {/* (Opcional) - Si quieres también redes a la derecha además de las del lado del logo */}
-        {/* <div className="flex gap-4 ml-6">
-          ... (puedes duplicar los enlaces si los quieres a la derecha)
-        </div> */}
       </div>
     </nav>
   );

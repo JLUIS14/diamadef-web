@@ -64,7 +64,7 @@ export default function App() {
       <ScrollToTop /> {/* ✅ Hace scroll al inicio en cada ruta */}
 
       {/* ✅ Contenedor principal con padding superior para no ocultar el contenido detrás del navbar fijo */}
-      <main className="pt-24">
+      <main className="pt-[130px]">
         <Routes>
           {/* Rutas principales */}
           <Route path="/" element={<Home />} />

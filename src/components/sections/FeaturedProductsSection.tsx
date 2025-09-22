@@ -32,7 +32,7 @@ export default function FeaturedProductsSection() {
           <div key={prod.nombre} className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow p-4 flex flex-col items-center border border-green-100">
             <img
               src={prod.imagen}
-              alt={prod.nombre}
+              alt={`${prod.nombre} - ${prod.descripcion.slice(0, 120)}...`}
               className="w-full h-48 object-cover rounded-lg mb-4"
               loading="lazy"
             />

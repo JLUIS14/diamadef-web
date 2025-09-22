@@ -23,7 +23,7 @@ export default function FenolicoDobleFilm() {
             className="w-full h-64 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300"
           />
           <img
-            src="/images/triplay/FenolicoDobleFilm1.jpg"
+            src="/images/triplay/FenolicoDobleFilm2.jpg"
             alt="Detalle superficie antideslizante"
             className="w-full h-64 object-cover rounded-xl shadow-lg transition-all duration-500 hover:scale-105 hover:object-contain hover:bg-black"
           />
@@ -101,7 +101,7 @@ export default function FenolicoDobleFilm() {
                 ["Gramaje del film", "180", "g/m²", "Capa protectora prensada en caliente"],
                 ["Adhesivo", "WBP", "—", "Resistente al agua y ebullición"],
                 ["Contenido de humedad", "8.2", "%", "Mantiene estabilidad dimensional"],
-                ["Densidad", "510", "kg/m³", "Buena relación resistencia/peso"],
+                ["Densidad", "530", "kg/m³", "Buena relación resistencia/peso"],
                 ["Calidad de vinculación", "0.60 – 1.15", "MPa", "Cumple norma EN 314"],
                 ["Tasa de daños en uso", "68", "%", "Bajo deterioro en ciclos intensivos"],
                 ["Módulo de Elasticidad (MOE) – Longitudinal", "5150", "MPa", "Buena rigidez longitudinal"],

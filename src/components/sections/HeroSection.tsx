@@ -4,7 +4,8 @@ const images = [
   "/images/img14.jpg",
   "/images/img4.jpg",
   "/images/img13.jpg",
-   "/images/img2.jpg"// 
+   "/images/img2.jpg",
+   "/images/img16.jpg",// 
 ];
 
 export const HeroSection = () => {

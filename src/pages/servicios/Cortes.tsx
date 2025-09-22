@@ -7,7 +7,7 @@ import {Link} from "react-router-dom";
 // Importa tus imágenes (colócalas en /src/assets o /public)
 import MaquinariaCorte from "@/assets/MaquinariaCorte.jpg";
 import ImagenCepillado from "@/assets/Corte.jpg";
-import ImagenMachihembrado from "@/assets/Machihembrado.jpg";
+import ImagenMachihembrado from "@/assets/Machihembrado1.jpg";
 
 export default function Servicios() {
   return (

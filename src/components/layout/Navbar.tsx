@@ -32,7 +32,6 @@ export const Navbar = () => {
   const [submenuOpen, setSubmenuOpen] = useState<number | null>(null);
   const [openServices, setOpenServices] = useState(false);
 
-  // Links a redes — cámbialos por los tuyos reales
   const socialLinks = {
     linkedin: "https://www.linkedin.com",
     facebook: "https://www.facebook.com",
@@ -56,6 +55,8 @@ export const Navbar = () => {
             title="Productos de Calidad Para Tus Proyectos"
           />
         </Link>
+        {/* Correo en móvil */}
+
 
         {/* Redes junto al logo */}
         <div className="hidden md:flex items-center gap-2 ml-4">

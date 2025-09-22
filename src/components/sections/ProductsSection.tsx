@@ -4,7 +4,7 @@
 const products = [
   {
     name: "Tablones de Cedro",
-    img: "/assets/cedro.jpg", // pon una imagen real o referencial
+    img: "/assets/cedro.jpg", // imagen real o referencial
     desc: "Madera de alta calidad ideal para muebles finos y acabados.",
   },
   {

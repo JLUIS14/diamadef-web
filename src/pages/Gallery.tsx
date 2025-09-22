@@ -4,11 +4,11 @@ export default function Gallery() {
   const images = [
     "/images/galeria/img12.jpg",
     "/images/galeria/mina1.jpg",
-    "/images/galeria/img6.jpg",
+    "/images/galeria/img17.jpg",
     "/images/galeria/img8.jpg",
     "/images/galeria/img1.jpg",
     "/images/galeria/img9.jpg",
-    "/images/galeria/img5.jpg",
+    "/images/galeria/img6.jpg",
     "/images/galeria/construccion.jpg",
     "/images/galeria/despacho.jpg",
   ];

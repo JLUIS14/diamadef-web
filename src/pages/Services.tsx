@@ -15,7 +15,7 @@ export default function Services() {
         </li>
         <li>
           <a
-            href="/servicios/tratamiento-termico"
+            href="/servicios/termico"
             className="text-blue-600 hover:underline"
           >
             Servicio de tratamiento térmico
@@ -23,7 +23,7 @@ export default function Services() {
         </li>
         <li>
           <a
-            href="/servicios/tratamiento-preventivo"
+            href="/servicios/preventivo"
             className="text-blue-600 hover:underline"
           >
             Servicio de tratamiento preventivo

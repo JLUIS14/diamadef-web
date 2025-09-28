@@ -109,7 +109,7 @@ export default function FenolicoDobleFilm() {
                 ["Resistencia a flexión (MOR) – Longitudinal", "51.05", "MPa", "Alta resistencia en flexión"],
                 ["Resistencia a flexión (MOR) – Transversal", "41.08", "MPa", "Similar a maderas duras industriales"],
                 ["Tolerancia de espesor", "±0.5", "mm", "Variación mínima por control de calidad"],
-                ["Vida útil estimada", "8 – 15", "usos", "Depende de mantenimiento y condiciones de obra"],
+                ["Vida útil estimada", "10 – 20", "usos", "Depende de mantenimiento y condiciones de obra"],
               ].map((row, index) => (
                 <tr key={index} className={index % 2 === 0 ? "bg-white" : "bg-gray-100"}>
                   {row.map((cell, i) => (

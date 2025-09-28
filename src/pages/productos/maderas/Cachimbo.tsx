@@ -86,11 +86,13 @@ export default function Cachimbo() {
             alt="Madera Cachimbo"
             className="w-full h-auto max-h-[230px] object-cover rounded-xl shadow-lg"
           />
-          <img
-            src="/images/maderas/Cachimbo1.jpg"
-            alt="Madera Cachimbo alternativa"
-            className="w-full h-auto max-h-[230px] object-cover rounded-xl shadow-lg"
-          />
+          <div className="relative group overflow-hidden rounded-xl shadow-lg">
+            <img
+              src="/images/maderas/Cachimbo3.jpg"
+              alt="Madera Cachimbo alternativa"
+              className="w-full h-auto max-h-[230px] object-cover group-hover:object-contain transition-all duration-500 bg-black"
+             />
+          </div>
         </div>
 
         {/* Descripción */}
@@ -176,3 +178,5 @@ export default function Cachimbo() {
     </div>
   );
 }
+
+

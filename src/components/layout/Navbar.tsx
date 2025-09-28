@@ -51,7 +51,7 @@ export const Navbar = () => {
           <img
             src={logo}
             alt="Logo Diamadef"
-            className="h-12 w-auto sm:h-24 md:h-28 lg:h-32 rounded-xl bg-white shadow-lg object-contain border-4 border-green-200 transition-all duration-200"
+            className="h-10 w-auto sm:h-20 md:h-24 lg:h-28 rounded-xl bg-white shadow-lg object-contain border-4 border-green-200 transition-all duration-200"
             title="Productos de Calidad Para Tus Proyectos"
           />
         </Link>
@@ -340,7 +340,7 @@ export const Navbar = () => {
                 >
                   <button
                     type="button"
-                    className="px-2 py-2 text-white text-lg font-semibold hover:bg-yellow-400 transition-colors flex items-center"
+                    className="px-2 py-2 text-white text-base font-medium hover:bg-yellow-400 transition-colors flex items-center"
                   >
                     Productos <span className="ml-1 text-[10px]">▼</span>
                   </button>
@@ -404,7 +404,7 @@ export const Navbar = () => {
                 >
                   <button
                     type="button"
-                    className="px-2 py-2 text-white text-lg font-semibold hover:bg-yellow-400 transition-colors flex items-center"
+                    className="px-2 py-2 text-white text-base font-medium hover:bg-yellow-400 transition-colors flex items-center"
                   >
                     Servicios <span className="ml-1 text-[10px]">▼</span>
                   </button>
@@ -432,7 +432,7 @@ export const Navbar = () => {
               <li key={link.name}>
                 <Link
                   to={link.path}
-                  className="block px-3 py-2 text-white text-lg font-semibold hover:bg-yellow-400 transition-colors"
+                  className="block px-3 py-2 text-white text-base font-medium hover:bg-yellow-400 transition-colors"
                 >
                   {link.name}
                 </Link>

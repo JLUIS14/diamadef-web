@@ -44,7 +44,7 @@ import Preventivo from "./pages/servicios/Preventivo";
 
 export default function App() {
   // ✅ Mensajes dinámicos para el botón de WhatsApp
-  const mensajes = ["¡Escríbenos!", "Estamos en línea", "Chatea con nosotros"];
+  const mensajes = ["¡Escríbenos!", "Estamos en línea", "Chatea con nosotros", "Consigue tu cotización ahora", "Asesoría rápida y sin costo"];
   const [texto, setTexto] = useState(mensajes[0]);
 
   useEffect(() => {
@@ -117,7 +117,7 @@ export default function App() {
 
       {/* ✅ Botón flotante de WhatsApp con mensaje dinámico */}
       <a
-        href={`https://wa.me/51966776467?text=${encodeURIComponent(
+        href={`https://wa.me/51969368362?text=${encodeURIComponent(
           "👋 ¡Hola! Bienvenido a Diamadef. Estamos atentos para responder tu consulta."
         )}`}
         target="_blank"

@@ -99,7 +99,7 @@ export default function Contact() {
 
       <div className="mt-10 text-gray-700">
         <h2 className="text-2xl font-bold mb-3">Otros medios de contacto</h2>
-        <p>📞 Teléfonos: +51 946 917 999  ,  +51 966 776 467</p>
+        <p>📞 Teléfonos: +51 946 917 999  ,  +51 969 368 362</p>
         <p>✉️ Email: ventas@diamadef.com</p>
         <p>
       💬 WhatsApp:{" "}

@@ -36,7 +36,7 @@ export const Navbar = () => {
     linkedin: "https://www.linkedin.com",
     facebook: "https://www.facebook.com",
     instagram: "https://www.instagram.com",
-    youtube: "https://www.youtube.com/embed/i2myQ1gG0X0",
+    youtube: "https://www.youtube.com/watch?v=i2myQ1gG0X0",
     tiktok: "https://www.tiktok.com",
   };
 

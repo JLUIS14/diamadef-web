@@ -117,7 +117,7 @@ export default function App() {
 
       {/* ✅ Botón flotante de WhatsApp con mensaje dinámico */}
       <a
-        href={`https://wa.me/51969368362?text=${encodeURIComponent(
+        href={`https://wa.me/51946917999?text=${encodeURIComponent(
           "👋 ¡Hola! Bienvenido a Diamadef. Estamos atentos para responder tu consulta."
         )}`}
         target="_blank"

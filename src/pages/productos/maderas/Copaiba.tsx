@@ -1,44 +1,50 @@
-import React from "react";
+import { Seo } from "../../../components/common/Seo";
+import { BloqueCotizar } from "../../../components/common/BloqueCotizar";
 
 export default function Copaiba() {
   return (
     <div className="bg-[#f9f7f3] min-h-screen p-6">
+      <Seo path="/productos/maderas/copaiba" />
+
       <div className="max-w-6xl mx-auto">
-        
+
         {/* Título */}
         <h1 className="text-4xl font-bold text-green-700 mb-6">
-          Madera Copaiba
+          Madera Copaiba en Lima
         </h1>
 
         {/* Imagen + Descripción */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center mb-8">
           <img
             src="/images/maderas/Copaiba.jpg"
-            alt="Madera Copaiba"
+            alt="Madera copaiba en tablas - venta en Lima Diamadef"
             className="w-full h-auto max-h-[250px] object-cover rounded-xl shadow-lg"
           />
           <p className="text-lg text-gray-800 leading-relaxed text-justify">
             La <strong>madera Copaiba</strong>, proveniente del árbol{" "}
             <em>Copaifera paupera</em> y especies relacionadas como{" "}
-            <em>C. officinalis</em>, es originaria de la Amazonía peruana. 
-            Presenta albura de color beige y duramen de tono castaño rojizo con 
-            vetas oscuras. Su textura es media a fina, con grano recto y veteado 
-            característico en arcos superpuestos y bandas longitudinales oscuras 
-            muy angostas.  
-            Tiene una durabilidad natural muy alta frente a hongos e insectos, 
-            aunque su secado es naturalmente lento. Es apreciada por su resistencia 
-            mecánica y su estabilidad dimensional moderada, lo que la hace versátil 
+            <em>C. officinalis</em>, es originaria de la Amazonía peruana.
+            Presenta albura de color beige y duramen de tono castaño rojizo con
+            vetas oscuras. Su textura es media a fina, con grano recto y veteado
+            característico en arcos superpuestos y bandas longitudinales oscuras
+            muy angostas.
+            Tiene una durabilidad natural muy alta frente a hongos e insectos,
+            aunque su secado es naturalmente lento. Es apreciada por su resistencia
+            mecánica y su estabilidad dimensional moderada, lo que la hace versátil
             en múltiples aplicaciones.
           </p>
         </div>
 
+        {/* Bloque de venta */}
+        <BloqueCotizar producto="madera copaiba" />
+
         {/* Características y Usos */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-          
+
           {/* Características */}
           <div className="bg-green-100 border-l-4 border-green-700 p-4 rounded-lg">
             <h2 className="text-2xl font-semibold text-green-800 mb-2">
-              Características principales
+              Características de la madera copaiba
             </h2>
             <ul className="list-disc list-inside text-gray-700">
               <li>Textura: media a fina</li>
@@ -52,7 +58,7 @@ export default function Copaiba() {
           {/* Usos */}
           <div className="bg-yellow-50 border-l-4 border-yellow-600 p-4 rounded-lg">
             <h2 className="text-2xl font-semibold text-yellow-800 mb-2">
-              Usos comunes
+              Usos de la madera copaiba
             </h2>
             <ul className="list-disc list-inside text-gray-700">
               <li>Mobiliario de interior y exterior</li>
@@ -68,7 +74,7 @@ export default function Copaiba() {
         {/* Especificaciones técnicas */}
         <div className="overflow-x-auto bg-white rounded-xl shadow-lg p-4">
           <h2 className="text-2xl font-semibold text-green-700 mb-4">
-            Especificaciones Técnicas
+            Especificaciones técnicas de la copaiba
           </h2>
           <table className="min-w-full border border-gray-300">
             <thead className="bg-green-600 text-white">

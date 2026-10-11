@@ -1,36 +1,42 @@
-import React from "react";
+import { Seo } from "../../../components/common/Seo";
+import { BloqueCotizar } from "../../../components/common/BloqueCotizar";
 
 export default function Bolaina() {
   return (
     <div className="bg-[#f9f7f3] min-h-screen p-6">
+      <Seo path="/productos/maderas/bolaina" />
+
       <div className="max-w-6xl mx-auto">
-        
+
         {/* Título */}
         <h1 className="text-4xl font-bold text-green-700 mb-6">
-          Madera Bolaina
+          Madera Bolaina en Lima
         </h1>
 
         {/* Imagen + Descripción */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center mb-8">
           <img
             src="/images/maderas/Bolaina.jpg"
-            alt="Madera Bolaina"
+            alt="Madera bolaina en tablas - venta en Lima Diamadef"
             className="w-full h-auto max-h-[220px] object-cover rounded-xl shadow-lg"
           />
           <p className="text-lg text-gray-800 leading-relaxed text-justify">
-            La <strong>Bolaina</strong> (<em>Guazuma crinita</em>) es una especie maderable nativa de la Amazonía peruana, especialmente abundante en bosques aluviales y purmas.  
-            Es una especie pionera de rápido crecimiento, ideal para ser gestionada por pequeños productores debido a su capacidad de regeneración natural y ciclo productivo acelerado;  
+            La <strong>Bolaina</strong> (<em>Guazuma crinita</em>) es una especie maderable nativa de la Amazonía peruana, especialmente abundante en bosques aluviales y purmas.
+            Es una especie pionera de rápido crecimiento, ideal para ser gestionada por pequeños productores debido a su capacidad de regeneración natural y ciclo productivo acelerado;
             alcanza diámetros útiles tras 11–12 años, lo que permite su aprovechamiento sostenible.
           </p>
         </div>
 
+        {/* Bloque de venta */}
+        <BloqueCotizar producto="madera bolaina" />
+
         {/* Características y Usos */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-          
+
           {/* Características */}
           <div className="bg-green-100 border-l-4 border-green-700 p-4 rounded-lg">
             <h2 className="text-2xl font-semibold text-green-800 mb-2">
-              Características principales
+              Características de la madera bolaina
             </h2>
             <ul className="list-disc list-inside text-gray-700">
               <li>Crecimiento rápido y regeneración natural: hasta 4,8 cm de diámetro por año.</li>
@@ -42,7 +48,7 @@ export default function Bolaina() {
           {/* Usos */}
           <div className="bg-yellow-50 border-l-4 border-yellow-600 p-4 rounded-lg">
             <h2 className="text-2xl font-semibold text-yellow-800 mb-2">
-              Usos comunes
+              Usos de la madera bolaina
             </h2>
             <ul className="list-disc list-inside text-gray-700">
               <li>Construcción rápida y asequible: casas prefabricadas, paneles y tablillas.</li>
@@ -56,7 +62,7 @@ export default function Bolaina() {
         {/* Especificaciones técnicas */}
         <div className="overflow-x-auto bg-white rounded-xl shadow-lg p-4">
           <h2 className="text-2xl font-semibold text-green-700 mb-4">
-            Especificaciones Técnicas
+            Especificaciones técnicas de la bolaina
           </h2>
           <table className="min-w-full border border-gray-300">
             <thead className="bg-green-600 text-white">

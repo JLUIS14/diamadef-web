@@ -1,19 +1,22 @@
-import React from "react";
+import { Seo } from "../../../components/common/Seo";
+import { BloqueCotizar } from "../../../components/common/BloqueCotizar";
 
 export default function Higuerilla() {
   return (
     <div className="bg-[#f9f7f3] min-h-screen p-6">
+      <Seo path="/productos/maderas/higuerilla" />
+
       <div className="max-w-6xl mx-auto">
         {/* Título */}
         <h1 className="text-4xl font-bold text-green-700 mb-6">
-          Madera Higuerilla (Micrandra spruceana)
+          Madera Higuerilla en Lima
         </h1>
 
         {/* Imagen + Descripción */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center mb-8">
           <img
             src="/images/maderas/Higuerilla.jpg"
-            alt="Madera Higuerilla"
+            alt="Madera higuerilla (Micrandra spruceana) en tablas - venta en Lima Diamadef"
             className="w-full h-auto max-h-[230px] object-cover rounded-xl shadow-lg"
           />
           <p className="text-lg text-gray-800 leading-relaxed text-justify">
@@ -28,12 +31,15 @@ export default function Higuerilla() {
           </p>
         </div>
 
+        {/* Bloque de venta */}
+        <BloqueCotizar producto="madera higuerilla" />
+
         {/* Características y Usos */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
           {/* Características */}
           <div className="bg-green-100 border-l-4 border-green-700 p-4 rounded-lg">
             <h2 className="text-2xl font-semibold text-green-800 mb-2">
-              Características principales
+              Características de la madera higuerilla
             </h2>
             <ul className="list-disc list-inside text-gray-700 space-y-1">
               <li>Color: albura crema; duramen marrón oscuro.</li>
@@ -48,7 +54,7 @@ export default function Higuerilla() {
           {/* Usos */}
           <div className="bg-yellow-50 border-l-4 border-yellow-600 p-4 rounded-lg">
             <h2 className="text-2xl font-semibold text-yellow-800 mb-2">
-              Usos comunes
+              Usos de la madera higuerilla
             </h2>
             <ul className="list-disc list-inside text-gray-700 space-y-1">
               <li>Paneles, chapas, machihembrados y revestimientos.</li>
@@ -62,23 +68,15 @@ export default function Higuerilla() {
         {/* Especificaciones técnicas */}
         <div className="overflow-x-auto bg-white rounded-xl shadow-lg p-4">
           <h2 className="text-2xl font-semibold text-green-700 mb-4">
-            Especificaciones Técnicas
+            Especificaciones técnicas de la higuerilla
           </h2>
           <table className="min-w-full border border-gray-300">
             <thead className="bg-green-600 text-white">
               <tr>
-                <th className="border border-gray-300 px-4 py-2 text-left">
-                  Característica
-                </th>
-                <th className="border border-gray-300 px-4 py-2 text-left">
-                  Valor
-                </th>
-                <th className="border border-gray-300 px-4 py-2 text-left">
-                  Unidad
-                </th>
-                <th className="border border-gray-300 px-4 py-2 text-left">
-                  Observaciones
-                </th>
+                <th className="border border-gray-300 px-4 py-2 text-left">Característica</th>
+                <th className="border border-gray-300 px-4 py-2 text-left">Valor</th>
+                <th className="border border-gray-300 px-4 py-2 text-left">Unidad</th>
+                <th className="border border-gray-300 px-4 py-2 text-left">Observaciones</th>
               </tr>
             </thead>
             <tbody>

@@ -1,7 +1,8 @@
 
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/logo-diamadef.png";
+import logo from "../../assets/logo-diamadef-blanco.png";
+import logo2 from "../../assets/LogoMadesba-borde.png";
 import {
   productsMenu,
   ProductMenuItem,
@@ -46,13 +47,19 @@ export const Navbar = () => {
       className="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-green-700 to-green-400 shadow-lg px-4 py-2 flex items-center justify-between"
     >
       <div className="flex items-center">
-        {/* Logo */}
-        <Link to="/" className="flex items-center">
+                {/* Logos */}
+        <Link to="/" className="flex items-center gap-2 sm:gap-3">
           <img
             src={logo}
-            alt="Logo Diamadef"
-            className="h-10 w-auto sm:h-20 md:h-24 lg:h-28 rounded-xl bg-white shadow-lg object-contain border-4 border-green-200 transition-all duration-200"
+            alt="Inversiones Diamadef - venta de productos de madera"
+           className="h-10 w-auto sm:h-20 md:h-24 lg:h-28 object-contain drop-shadow-md transition-all duration-200"
             title="Productos de Calidad Para Tus Proyectos"
+          />
+          <img
+            src={logo2}
+            alt="Madesba - productos de madera"
+                        className="h-12 w-auto sm:h-24 md:h-28 lg:h-32 object-contain drop-shadow-md transition-all duration-200"
+            title="Madesba"
           />
         </Link>
         {/* Correo en móvil */}

@@ -1,6 +1,11 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
+import { Seo } from "../../../components/common/Seo";
+
+const WHATSAPP_URL =
+  "https://wa.me/51946917999?text=" +
+  encodeURIComponent("Hola Diamadef, quisiera cotizar madera cachimbo.");
 
 export default function Cachimbo() {
   const pdfRef = useRef<HTMLDivElement>(null);
@@ -10,60 +15,51 @@ export default function Cachimbo() {
     const element = pdfRef.current;
     if (!element) return;
 
-    // Capturar el contenido en canvas
     const canvas = await html2canvas(element, { scale: 2 });
     const imgData = canvas.toDataURL("image/png");
 
-    // Crear PDF
     const pdf = new jsPDF("p", "mm", "a4");
-
-    // Ruta del logo
     const logo = "/images/logo.png";
 
-    // Medidas de la página
     const pageWidth = pdf.internal.pageSize.getWidth();
     const pageHeight = pdf.internal.pageSize.getHeight();
 
-    // Insertar logo arriba
     const logoWidth = 40;
     const logoHeight = 20;
     const logoX = (pageWidth - logoWidth) / 2;
     const logoY = 10;
     pdf.addImage(logo, "PNG", logoX, logoY, logoWidth, logoHeight);
 
-    // Márgenes
     const marginX = 15;
     const marginY = 40;
 
-    // 📌 Escalamos el contenido un 10% más grande (zoom 1.1x)
-    const imgProps = (pdf as any).getImageProperties(imgData);
-    let contentWidth = (pageWidth - marginX * 2) * 1.1; // aumento
+    const imgProps = pdf.getImageProperties(imgData);
+    let contentWidth = (pageWidth - marginX * 2) * 1.1;
     let contentHeight = (imgProps.height * contentWidth) / imgProps.width;
 
-    // ✅ Evitar que se pase del ancho de página
     if (contentWidth > pageWidth - marginX * 2) {
       contentWidth = pageWidth - marginX * 2;
       contentHeight = (imgProps.height * contentWidth) / imgProps.width;
     }
 
-    // ✅ Centrar horizontalmente el contenido
     const contentX = (pageWidth - contentWidth) / 2;
 
     pdf.addImage(
       imgData,
       "PNG",
-      contentX, // posición centrada
+      contentX,
       marginY,
       contentWidth,
       contentHeight > pageHeight - marginY ? pageHeight - marginY : contentHeight
     );
 
-    // Guardar PDF
     pdf.save("Madera-Cachimbo.pdf");
   };
 
   return (
     <div className="bg-[#f9f7f3] min-h-screen p-6">
+      <Seo path="/productos/maderas/cachimbo" />
+
       {/* Botón PDF */}
       <button
         onClick={exportToPDF}
@@ -76,42 +72,57 @@ export default function Cachimbo() {
       <div ref={pdfRef} className="max-w-6xl mx-auto" id="cachimbo-content">
         {/* Título */}
         <h1 className="text-4xl font-bold text-green-700 mb-6">
-          Madera Cachimbo
+          Madera Cachimbo en Lima
         </h1>
 
         {/* Imágenes */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           <img
             src="/images/maderas/Cachimbo.jpg"
-            alt="Madera Cachimbo"
+            alt="Madera cachimbo en tablas - venta en Lima Diamadef"
             className="w-full h-auto max-h-[230px] object-cover rounded-xl shadow-lg"
           />
           <div className="relative group overflow-hidden rounded-xl shadow-lg">
             <img
               src="/images/maderas/Cachimbo3.jpg"
-              alt="Madera Cachimbo alternativa"
+              alt="Detalle de la veta de la madera cachimbo"
               className="w-full h-auto max-h-[230px] object-cover group-hover:object-contain transition-all duration-500 bg-black"
-             />
+            />
           </div>
         </div>
 
         {/* Descripción */}
         <p className="text-lg text-gray-800 leading-relaxed text-justify mb-8">
-          La <strong>madera Cachimbo</strong> es una especie de la Amazonía peruana 
-          que se caracteriza por una densidad media a semipesada, textura media y 
-          grano recto. Posee buena estabilidad dimensional, trabajabilidad moderada 
-          y resistencia mecánica media-alta. Es utilizada en construcción, 
-          carpintería, molduras, encofrados, estructuras y artesanía. 
-          La madera seca presenta un color que va del blanco cremoso al marrón pálido, 
+          La <strong>madera Cachimbo</strong> es una especie de la Amazonía peruana
+          que se caracteriza por una densidad media a semipesada, textura media y
+          grano recto. Posee buena estabilidad dimensional, trabajabilidad moderada
+          y resistencia mecánica media-alta. Es utilizada en construcción,
+          carpintería, molduras, encofrados, estructuras y artesanía.
+          La madera seca presenta un color que va del blanco cremoso al marrón pálido,
           con un brillo moderado, lo que la hace atractiva para diversos usos.
         </p>
 
+        {/* Bloque de venta */}
+        <div data-html2canvas-ignore className="bg-white border border-green-200 rounded-xl shadow p-5 mb-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <p className="text-gray-800 text-lg">
+            En <strong>Inversiones Diamadef</strong> vendemos <strong>madera cachimbo en Lima</strong>,
+            con <strong>cortes a medida</strong> y <strong>envíos a todo el Perú</strong>.
+          </p>
+          <a
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block text-center px-6 py-3 bg-green-600 text-white font-semibold rounded-full shadow hover:bg-green-700 transition whitespace-nowrap"
+          >
+            Cotizar por WhatsApp
+          </a>
+        </div>
+
         {/* Características y Usos */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-          {/* Características */}
           <div className="bg-green-100 border-l-4 border-green-700 p-4 rounded-lg">
             <h2 className="text-2xl font-semibold text-green-800 mb-2">
-              Características principales
+              Características de la madera cachimbo
             </h2>
             <ul className="list-disc list-inside text-gray-700">
               <li>Color: marrón claro a marrón rojizo</li>
@@ -122,10 +133,9 @@ export default function Cachimbo() {
             </ul>
           </div>
 
-          {/* Usos */}
           <div className="bg-yellow-50 border-l-4 border-yellow-600 p-4 rounded-lg">
             <h2 className="text-2xl font-semibold text-yellow-800 mb-2">
-              Usos comunes
+              Usos de la madera cachimbo
             </h2>
             <ul className="list-disc list-inside text-gray-700">
               <li>Construcción de estructuras</li>
@@ -140,7 +150,7 @@ export default function Cachimbo() {
         {/* Especificaciones técnicas */}
         <div className="overflow-x-auto bg-white rounded-xl shadow-lg p-4">
           <h2 className="text-2xl font-semibold text-green-700 mb-4">
-            Especificaciones Técnicas
+            Especificaciones técnicas del cachimbo
           </h2>
           <table className="min-w-full border border-gray-300">
             <thead className="bg-green-600 text-white">
@@ -178,5 +188,3 @@ export default function Cachimbo() {
     </div>
   );
 }
-
-

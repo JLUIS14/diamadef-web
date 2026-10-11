@@ -1,45 +1,134 @@
 <!doctype html>
-<html lang="es">
+<html lang="es-PE">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#2c5530" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/logo-diamadef.png" />
 
-    <!-- Título que aparece en la pestaña del navegador -->
-    <title>DIAMADEF | Maderas y Triplay en Perú</title>
-
-    <!-- Descripción para buscadores -->
+    <!-- SEO: título y descripción que aparecen en Google -->
+    <title>Venta de Madera, Triplay y Fenólicos en Lima | Diamadef (Madesba)</title>
     <meta
       name="description"
-      content="DIAMADEF distribuye maderas, triplay y derivados en Perú. Productos de calidad con atención personalizada y precios competitivos."
+      content="Venta de madera en Lima con envíos a todo el Perú: madera tornillo, bolaina, eucalipto, triplay, fenólicos, MDF, OSB, parihuelas, durmientes y postes. Cortes a medida. Cotiza por WhatsApp."
     />
+    <meta name="author" content="Inversiones Diamadef E.I.R.L. (Madesba)" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
 
-    <!-- Palabras clave (SEO básico) -->
-    <meta
-      name="keywords"
-      content="maderas, triplay, triplay fenólico, madera tornillo, madera roble, mdf, productos de madera, Perú"
-    />
+    <meta name="geo.region" content="PE-LIM" />
+    <meta name="geo.placename" content="Lima" />
 
-    <!-- Open Graph: mejora cómo se comparte en redes sociales -->
-    <meta property="og:title" content="DIAMADEF | Maderas y Triplay en Perú" />
+    <!-- Open Graph: cómo se ve al compartir en WhatsApp, Facebook, LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_PE" />
+    <meta property="og:site_name" content="Inversiones Diamadef (Madesba)" />
+    <meta property="og:title" content="Venta de Madera en Lima y todo el Perú | Diamadef (Madesba)" />
     <meta
       property="og:description"
-      content="Productos de calidad en madera y triplay con atención personalizada."
+      content="Madera tornillo, triplay, fenólicos, tableros, parihuelas, durmientes y postes. Cortes a medida y envíos a nivel nacional."
     />
-    <meta property="og:image" content="/logo-diamadef.png" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://diamadef.com" />
+    <meta property="og:url" content="https://diamadef.com/" />
+    <meta property="og:image" content="https://diamadef.com/logo-diamadef.png" />
 
-    <!-- Font Awesome -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Venta de Madera en Lima y todo el Perú | Diamadef (Madesba)" />
+    <meta name="twitter:description" content="Madera, triplay, fenólicos, tableros y parihuelas con envíos a nivel nacional." />
+    <meta name="twitter:image" content="https://diamadef.com/logo-diamadef.png" />
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome (íconos de redes sociales del navbar) -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       rel="stylesheet"
     />
+
+    <!-- Datos estructurados para Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://diamadef.com/#website",
+          "url": "https://diamadef.com/",
+          "name": "Inversiones Diamadef",
+          "alternateName": ["DIAMADEF", "Madesba"],
+          "publisher": { "@id": "https://diamadef.com/#empresa" },
+          "inLanguage": "es-PE"
+        },
+        {
+          "@type": ["LocalBusiness", "Organization"],
+          "@id": "https://diamadef.com/#empresa",
+          "name": "Inversiones Diamadef E.I.R.L.",
+          "alternateName": ["DIAMADEF", "Madesba"],
+          "url": "https://diamadef.com/",
+          "logo": "https://diamadef.com/logo-diamadef.png",
+          "image": "https://diamadef.com/logo-diamadef.png",
+          "description": "Venta y distribución de madera en Lima con envíos a todo el Perú: madera tornillo, bolaina, cachimbo, copaiba, eucalipto, triplay, fenólicos, tableros MDF y OSB, parihuelas, durmientes y postes. Cortes a medida, tratamiento térmico y preventivo.",
+          "telephone": "+51 946 917 999",
+          "email": "ventas@diamadef.com",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Av. Gerardo Unger 6355",
+            "addressLocality": "Lima",
+            "addressRegion": "Lima",
+            "postalCode": "15314",
+            "addressCountry": "PE"
+          },
+          "areaServed": [
+            { "@type": "City", "name": "Lima" },
+            { "@type": "Country", "name": "Perú" }
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+51 946 917 999",
+            "contactType": "sales",
+            "areaServed": "PE",
+            "availableLanguage": ["es"]
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "¿Dónde comprar madera en Lima?",
+              "acceptedAnswer": { "@type": "Answer", "text": "En Inversiones Diamadef (Madesba), Av. Gerardo Unger 6355, Lima. Vendemos madera tornillo, bolaina, cachimbo, eucalipto, triplay, fenólicos, tableros, parihuelas, durmientes y postes." }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Realizan envíos de madera a todo el Perú?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Sí, Diamadef (Madesba) realiza envíos a Lima y a todo el territorio peruano." }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Hacen cortes de madera a medida?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Sí, ofrecemos cortes a medida, tratamiento térmico y tratamiento preventivo de la madera." }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Cómo solicito una cotización?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Escríbenos al WhatsApp +51 946 917 999 o al correo ventas@diamadef.com." }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <h1>Venta de Madera en Lima y todo el Perú – Inversiones Diamadef (Madesba)</h1>
+      <p>Madera tornillo, bolaina, cachimbo, eucalipto, triplay, fenólicos, MDF, OSB, parihuelas, durmientes y postes. Cortes a medida y tratamiento de madera. WhatsApp: +51 946 917 999.</p>
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

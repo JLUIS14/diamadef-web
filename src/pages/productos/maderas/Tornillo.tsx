@@ -1,13 +1,16 @@
-import React from "react";
+import { Seo } from "../../../components/common/Seo";
+import { BloqueCotizar } from "../../../components/common/BloqueCotizar";
 
 export default function Tornillo() {
   return (
     <div className="bg-[#f9f7f3] min-h-screen p-6">
+      <Seo path="/productos/maderas/tornillo" />
+
       <div className="max-w-6xl mx-auto">
-        
+
         {/* Título */}
         <h1 className="text-4xl font-bold text-green-700 mb-8">
-          Madera Tornillo
+          Madera Tornillo en Lima
         </h1>
 
         {/* Imagen + Descripción */}
@@ -15,25 +18,28 @@ export default function Tornillo() {
           <div className="md:w-1/2">
             <img
               src="/images/maderas/Tornillo.jpg"
-              alt="Madera Tornillo"
+              alt="Madera tornillo en tablas y vigas - venta en Lima Diamadef"
               className="w-full h-auto max-h-[230px] object-cover rounded-xl shadow-lg"
             />
           </div>
           <div className="md:w-1/2 text-justify">
             <p className="text-lg text-gray-800 leading-relaxed mb-6">
-              La <strong>madera Tornillo</strong> (Cedrelinga cateniformis) es una especie tropical originaria de la Amazonía, utilizada ampliamente en carpintería y construcción. 
-              Se clasifica como madera semipesada a pesada, con buena durabilidad natural frente a la intemperie y ataque de insectos, gracias a la presencia de extractivos naturales en su duramen. 
-              Posee una textura media a gruesa, grano recto o ligeramente entrecruzado y un acabado superficial fino y uniforme. 
+              La <strong>madera Tornillo</strong> (<em>Cedrelinga cateniformis</em>) es una especie tropical originaria de la Amazonía, utilizada ampliamente en carpintería y construcción.
+              Se clasifica como madera semipesada a pesada, con buena durabilidad natural frente a la intemperie y ataque de insectos, gracias a la presencia de extractivos naturales en su duramen.
+              Posee una textura media a gruesa, grano recto o ligeramente entrecruzado y un acabado superficial fino y uniforme.
               Es apreciada por su facilidad de trabajo, resistencia mecánica y estabilidad dimensional.
             </p>
           </div>
         </div>
 
+        {/* Bloque de venta */}
+        <BloqueCotizar producto="madera tornillo" />
+
         {/* Características y Usos en dos columnas */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
           <div className="bg-green-100 border-l-4 border-green-700 p-4 rounded-lg">
             <h2 className="text-2xl font-semibold text-green-800 mb-2">
-              Características principales
+              Características de la madera tornillo
             </h2>
             <ul className="list-disc list-inside text-gray-700">
               <li>Color: varía del amarillo dorado a marrón dorado</li>
@@ -46,7 +52,7 @@ export default function Tornillo() {
 
           <div className="bg-yellow-50 border-l-4 border-yellow-600 p-4 rounded-lg">
             <h2 className="text-2xl font-semibold text-yellow-800 mb-2">
-              Usos comunes
+              Usos de la madera tornillo
             </h2>
             <ul className="list-disc list-inside text-gray-700">
               <li>Fabricación de muebles finos</li>
@@ -63,7 +69,7 @@ export default function Tornillo() {
         {/* Tabla de Especificaciones Técnicas */}
         <div className="overflow-x-auto bg-white rounded-xl shadow-md p-4">
           <h2 className="text-2xl font-semibold text-green-800 mb-4">
-            Especificaciones Técnicas
+            Especificaciones técnicas de la madera tornillo
           </h2>
           <table className="w-full border-collapse">
             <thead>

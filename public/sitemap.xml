@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Páginas principales -->
+  <url><loc>https://diamadef.com/</loc><lastmod>2026-10-05</lastmod><priority>1.0</priority></url>
+  <url><loc>https://diamadef.com/productos</loc><lastmod>2026-10-05</lastmod><priority>0.9</priority></url>
+  <url><loc>https://diamadef.com/servicios</loc><lastmod>2026-10-05</lastmod><priority>0.8</priority></url>
+  <url><loc>https://diamadef.com/contacto</loc><lastmod>2026-10-05</lastmod><priority>0.8</priority></url>
+  <url><loc>https://diamadef.com/nosotros</loc><lastmod>2026-10-05</lastmod><priority>0.6</priority></url>
+  <url><loc>https://diamadef.com/blog</loc><lastmod>2026-10-05</lastmod><priority>0.6</priority></url>
+  <url><loc>https://diamadef.com/galeria</loc><lastmod>2026-10-05</lastmod><priority>0.5</priority></url>
+  <url><loc>https://diamadef.com/clientes</loc><lastmod>2026-10-05</lastmod><priority>0.5</priority></url>
+
+  <!-- Servicios -->
+  <url><loc>https://diamadef.com/servicios/Cortes</loc><lastmod>2026-10-05</lastmod><priority>0.7</priority></url>
+  <url><loc>https://diamadef.com/servicios/termico</loc><lastmod>2026-10-05</lastmod><priority>0.7</priority></url>
+  <url><loc>https://diamadef.com/servicios/preventivo</loc><lastmod>2026-10-05</lastmod><priority>0.7</priority></url>
+
+  <!-- Maderas -->
+  <url><loc>https://diamadef.com/productos/maderas/tornillo</loc><lastmod>2026-10-05</lastmod><priority>0.8</priority></url>
+  <url><loc>https://diamadef.com/productos/maderas/cachimbo</loc><lastmod>2026-10-05</lastmod><priority>0.8</priority></url>
+  <url><loc>https://diamadef.com/productos/maderas/panguana</loc><lastmod>2026-10-05</lastmod><priority>0.8</priority></url>
+  <url><loc>https://diamadef.com/productos/maderas/copaiba</loc><lastmod>2026-10-05</lastmod><priority>0.8</priority></url>
+  <url><loc>https://diamadef.com/productos/maderas/roble</loc><lastmod>2026-10-05</lastmod><priority>0.8</priority></url>
+  <url><loc>https://diamadef.com/productos/maderas/bolaina</loc><lastmod>2026-10-05</lastmod><priority>0.8</priority></url>
+  <url><loc>https://diamadef.com/productos/maderas/huayruro</loc><lastmod>2026-10-05</lastmod><priority>0.8</priority></url>
+  <url><loc>https://diamadef.com/productos/maderas/moena</loc><lastmod>2026-10-05</lastmod><priority>0.8</priority></url>
+  <url><loc>https://diamadef.com/productos/maderas/eucalipto</loc><lastmod>2026-10-05</lastmod><priority>0.8</priority></url>
+  <url><loc>https://diamadef.com/productos/maderas/higuerilla</loc><lastmod>2026-10-05</lastmod><priority>0.8</priority></url>
+
+  <!-- Triplay y tableros -->
+  <url><loc>https://diamadef.com/productos/triplay/okoume</loc><lastmod>2026-10-05</lastmod><priority>0.8</priority></url>
+  <url><loc>https://diamadef.com/productos/triplay/bintangor</loc><lastmod>2026-10-05</lastmod><priority>0.8</priority></url>
+  <url><loc>https://diamadef.com/productos/triplay/lupuna</loc><lastmod>2026-10-05</lastmod><priority>0.8</priority></url>
+  <url><loc>https://diamadef.com/productos/triplay/fenolico-bc</loc><lastmod>2026-10-05</lastmod><priority>0.8</priority></url>
+  <url><loc>https://diamadef.com/productos/triplay/fenolico-doble-film</loc><lastmod>2026-10-05</lastmod><priority>0.8</priority></url>
+  <url><loc>https://diamadef.com/productos/triplay/osb</loc><lastmod>2026-10-05</lastmod><priority>0.8</priority></url>
+  <url><loc>https://diamadef.com/productos/triplay/mdf</loc><lastmod>2026-10-05</lastmod><priority>0.8</priority></url>
+
+  <!-- Otros productos -->
+  <url><loc>https://diamadef.com/productos/parihuelas</loc><lastmod>2026-10-05</lastmod><priority>0.8</priority></url>
+  <url><loc>https://diamadef.com/productos/durmientes</loc><lastmod>2026-10-05</lastmod><priority>0.8</priority></url>
+  <url><loc>https://diamadef.com/productos/postes</loc><lastmod>2026-10-05</lastmod><priority>0.8</priority></url>
+</urlset>

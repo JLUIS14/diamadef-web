@@ -7,19 +7,19 @@ const productos = [
     nombre: "Triplay Fenólico",
     imagen: img11,
     descripcion: "Fabricada con capas de pino, abedul, eucalipto y alamo, impregnada en resina fenolica con alta resistencia a la abrasión, humedad, calor y productos quimicos, cumple con normativas WBP, ideal para uso estructural y exterior",
-    link:  "/productos/triplay/Fenolico-doble-film",
+    link:  "/productos/triplay/fenolico-doble-film",
   },
   {
     nombre: "MDF natural",
     imagen: img12,
     descripcion: "Es un producto de madera que se obtiene procesando fibras de madera combinándolo con cera y resina para formar paneles estables y uniformes.",
-    link: "/productos/triplay/Mdf",
+    link: "/productos/triplay/mdf",
   },
   {
     nombre: "Madera Selecta Nacional",
     imagen: img10,
     descripcion: "diversos tipos de madera nacional; Tornillo, Eucalipto, Roble, Copaiba, Cachimbo, Panguana, con caracteristicas similares en sus propiedades físicas y mecánicas.",
-    link: "/productos/maderas/Tornillo"
+    link: "/productos/maderas/tornillo"
   },
 ];
 

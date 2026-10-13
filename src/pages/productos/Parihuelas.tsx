@@ -1,159 +1,203 @@
+import { Seo } from "../../components/common/Seo";
+import { BloqueCotizar } from "../../components/common/BloqueCotizar";
+
+const fila = (row: string[], i: number) => (
+  <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-gray-100"}>
+    {row.map((cell, j) => (
+      <td key={j} className="border border-gray-300 px-4 py-2">{cell}</td>
+    ))}
+  </tr>
+);
+
 export default function Parihuelas() {
   return (
     <div className="bg-[#f9f7f3] min-h-screen p-6">
+      <Seo path="/productos/parihuelas" />
+
       <div className="max-w-6xl mx-auto space-y-10">
 
         {/* Título */}
         <div className="text-center">
           <h1 className="text-4xl md:text-5xl font-extrabold text-amber-800 mb-4">
-            Pallets / Parihuelas
+            Parihuelas y Pallets de Madera en Lima
           </h1>
-          <p className="text-lg text-gray-700 max-w-3xl mx-auto text-justify">
-            Un pallet o parihuela es una plataforma rígida y estandarizada que sirve para apilar, 
-            almacenar, manipular y transportar mercancías de forma segura y eficiente. 
-            Se fabrican principalmente en madera, plástico o metal, siendo la madera la más utilizada 
-            por su costo accesible, resistencia y facilidad de reparación. 
-            Permiten el manejo mecanizado mediante montacargas, transpaletas y equipos de izaje, 
-            facilitando la logística y reduciendo los tiempos en almacenes, fábricas y centros de distribución.
+          <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+            Fabricamos parihuelas de 2 y 4 entradas en medidas estándar o a pedido, con
+            tratamiento térmico NIMF 15 para exportación. Envíos a todo el Perú.
           </p>
         </div>
+
+        {/* Bloque de cotización */}
+        <BloqueCotizar producto="parihuelas de madera" />
 
         {/* Galería de imágenes */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <img
             src="/images/parihuelas/Parihuela1.jpg"
-            alt="Parihuela de madera estándar"
+            alt="Parihuelas de madera apiladas en Lima"
+            loading="lazy"
             className="w-full h-64 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300"
           />
           <img
             src="/images/parihuelas/Parihuela.jpg"
-            alt="Detalle de pallet block 4 entradas"
+            alt="Pallet de madera de 4 entradas con tacos"
+            loading="lazy"
             className="w-full h-64 object-cover rounded-xl shadow-lg transition-all duration-500 hover:scale-105 hover:object-contain hover:bg-black"
           />
         </div>
 
-        {/* Tipos de Pallets */}
-        <div className="grid grid-cols-1 md:grid gap-6 ">
+        {/* Definición */}
+        <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-amber-700">
+          <h2 className="text-2xl font-semibold text-amber-800 mb-3">
+            ¿Qué es una parihuela o pallet?
+          </h2>
+          <p className="text-lg text-gray-800 leading-relaxed text-justify">
+            Una <strong>parihuela o pallet</strong> es una plataforma rígida que sirve para apilar,
+            almacenar y transportar mercadería con <strong>montacargas o transpaletas</strong>. La de
+            madera es la más usada por su <strong>bajo costo, resistencia y facilidad de reparación</strong>.
+            Para exportar, la madera debe llevar <strong>tratamiento térmico (HT) según la norma NIMF 15
+            (ISPM 15)</strong> y su sello correspondiente, que evita el traslado de plagas entre países.
+          </p>
+        </div>
+
+        {/* Tipos */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="bg-amber-50 border border-amber-200 p-6 rounded-xl shadow-md">
-            <h2 className="text-xl font-semibold text-amber-800 mb-3">Parihuelas de madera</h2>
+            <h2 className="text-2xl font-semibold text-amber-800 mb-3">
+              Parihuela de 2 entradas
+            </h2>
             <ul className="list-disc list-inside text-gray-700 space-y-2">
-              <li>Más comunes en la industria.</li>
-              <li>Fáciles de reparar y económicos.</li>
-              <li>Tratados térmicamente (HT) para exportación (ISPM 15).</li>
+              <li>Construida con largueros (tipo stringer).</li>
+              <li>El montacargas ingresa solo por dos lados.</li>
+              <li>Más liviana y económica.</li>
+              <li>Ideal para almacén y transporte nacional.</li>
+            </ul>
+          </div>
+          <div className="bg-amber-50 border border-amber-200 p-6 rounded-xl shadow-md">
+            <h2 className="text-2xl font-semibold text-amber-800 mb-3">
+              Parihuela de 4 entradas
+            </h2>
+            <ul className="list-disc list-inside text-gray-700 space-y-2">
+              <li>Construida con 9 tacos (tipo block).</li>
+              <li>Ingreso de montacargas por los cuatro lados.</li>
+              <li>Mayor capacidad y estabilidad.</li>
+              <li>Recomendada para exportación y almacenes con racks.</li>
             </ul>
           </div>
         </div>
 
-        {/* Ventajas y Desventajas en 2 columnas */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-center">
-          <div className="bg-green-50 border border-green-200 p-6 rounded-xl shadow-md">
-            <h2 className="text-2xl font-semibold text-green-800 mb-4">Ventajas</h2>
-            <ul className="list-disc list-inside text-gray-700 space-y-2 text-left inline-block">
-              <li>Estandarización logística internacional.</li>
-              <li>Facilitan la manipulación con montacargas y grúas.</li>
-              <li>Reducen daños en la mercancía.</li>
-              <li>Pueden reutilizarse y repararse.</li>
-              <li>Biodegradables y reciclables (madera).</li>
-            </ul>
-          </div>
-
-          <div className="bg-red-50 border border-red-200 p-6 rounded-xl shadow-md">
-            <h2 className="text-2xl font-semibold text-red-800 mb-4">Desventajas</h2>
-            <ul className="list-disc list-inside text-gray-700 space-y-2 text-left inline-block">
-              <li>Los pallets de madera pueden ser afectados por plagas y humedad.</li>
-              <li>Requieren tratamiento especial para exportación.</li>
-              <li>Mayor peso que plástico o aluminio.</li>
-              <li>Vida útil limitada en condiciones extremas.</li>
-            </ul>
-          </div>
-        </div>
-
-        {/* Usos principales */}
+        {/* Usos */}
         <div className="bg-yellow-50 border border-yellow-200 p-6 rounded-xl shadow-md">
-          <h2 className="text-2xl font-semibold text-yellow-800 mb-4">Usos principales</h2>
+          <h2 className="text-2xl font-semibold text-yellow-800 mb-4">
+            Usos de las parihuelas de madera
+          </h2>
           <ul className="list-disc list-inside text-gray-700 space-y-2">
-            <li>Almacenamiento y transporte en almacenes y fábricas.</li>
-            <li>Exportación e importación de mercancías (ISPM 15).</li>
-            <li>Sectores: agroindustria, alimentación, farmacéutica, minería e industria pesada.</li>
-            <li>Aplicaciones secundarias: muebles, pisos, construcción ligera.</li>
+            <li>Almacenamiento y despacho en almacenes, fábricas y centros de distribución.</li>
+            <li>Exportación de productos con tratamiento térmico NIMF 15.</li>
+            <li>Agroindustria, alimentos, minería, construcción e industria en general.</li>
           </ul>
         </div>
 
+        {/* Ventajas y Limitaciones */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="bg-green-50 border border-green-200 p-6 rounded-xl shadow-md">
+            <h2 className="text-2xl font-semibold text-green-800 mb-4">
+              Ventajas de la parihuela de madera
+            </h2>
+            <ul className="list-disc list-inside text-gray-700 space-y-2">
+              <li>Más económica que la de plástico o metal.</li>
+              <li>Fácil de reparar y reutilizar.</li>
+              <li>Se fabrica a la medida de tu producto.</li>
+              <li>Material renovable, biodegradable y reciclable.</li>
+            </ul>
+          </div>
+          <div className="bg-red-50 border border-red-200 p-6 rounded-xl shadow-md">
+            <h2 className="text-2xl font-semibold text-red-800 mb-4">
+              Consideraciones
+            </h2>
+            <ul className="list-disc list-inside text-gray-700 space-y-2">
+              <li>Para exportar requiere tratamiento térmico y sello NIMF 15.</li>
+              <li>Debe protegerse de la humedad prolongada.</li>
+              <li>Pesa más que una parihuela de plástico.</li>
+            </ul>
+          </div>
+        </div>
+
+        <p className="text-gray-700 text-center">
+          ¿Vas a exportar? Conoce nuestro servicio de{" "}
+          <a href="/servicios/termico" className="text-amber-800 underline font-semibold">
+            tratamiento térmico de madera
+          </a>
+          .
+        </p>
+
         {/* Tablas técnicas */}
         <div className="overflow-x-auto bg-white rounded-xl shadow-lg p-6 space-y-10">
-
-          {/* Primero 2 entradas */}
-          <h2 className="text-3xl font-semibold text-amber-800 mb-4">
-            Especificaciones Técnicas – 2 entradas
-          </h2>
-          <table className="min-w-full border border-gray-300 text-sm mb-10">
-            <thead className="bg-amber-600 text-white">
-              <tr>
-                <th className="border px-4 py-2">Parámetro</th>
-                <th className="border px-4 py-2">Valor</th>
-                <th className="border px-4 py-2">Unidad</th>
-                <th className="border px-4 py-2">Comentarios</th>
-              </tr>
-            </thead>
-            <tbody>
-              {[
-                ["Tipo de pallet", "Stringer pallet, 2 entradas", "–", "Acceso por dos lados"],
-                ["Dimensiones nominales", "1200x1000 / 1200x800", "mm", "ISO y Euro pallet"],
-                ["Altura total", "130 – 150", "mm", "Menor altura que 4 vías"],
-                ["Peso aproximado", "14 – 22", "kg", "Más liviano"],
-                ["Capacidad estática", "800 – 3000", "kg", "Según diseño"],
-                ["Capacidad dinámica", "600 – 1200", "kg", "Menor resistencia en movimiento"],
-                ["Capacidad en rack", "400 – 800", "kg", "Menor que 4 vías"],
-                ["Nº de largueros", "2 – 3", "unid.", "Dan rigidez"],
-                ["Norma exportación", "ISPM 15 – HT", "–", "Requerido para comercio"],
-              ].map((row, i) => (
-                <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-gray-100"}>
-                  {row.map((cell, j) => (
-                    <td key={j} className="border px-4 py-2">{cell}</td>
-                  ))}
+          <div>
+            <h2 className="text-3xl font-semibold text-amber-800 mb-4">
+              Ficha técnica – parihuela de 2 entradas
+            </h2>
+            <table className="min-w-full border border-gray-300 text-sm">
+              <thead className="bg-amber-600 text-white">
+                <tr>
+                  <th className="border border-gray-300 px-4 py-2 text-left">Parámetro</th>
+                  <th className="border border-gray-300 px-4 py-2 text-left">Valor</th>
+                  <th className="border border-gray-300 px-4 py-2 text-left">Unidad</th>
+                  <th className="border border-gray-300 px-4 py-2 text-left">Comentarios</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {[
+                  ["Tipo", "Con largueros (stringer)", "–", "Acceso por dos lados"],
+                  ["Medidas más usadas", "1200 × 1000 / 1200 × 800", "mm", "También a medida"],
+                  ["Altura total", "130 – 150", "mm", "Según diseño"],
+                  ["Peso aproximado", "14 – 22", "kg", "Según madera y humedad"],
+                  ["Nº de largueros", "3", "unid.", "Dan rigidez a la base"],
+                  ["Capacidad estática", "800 – 3,000", "kg", "Apilado en piso, referencial"],
+                  ["Capacidad dinámica", "600 – 1,200", "kg", "En movimiento, referencial"],
+                  ["Tratamiento para exportación", "HT – NIMF 15", "–", "Opcional"],
+                ].map(fila)}
+              </tbody>
+            </table>
+          </div>
 
-          {/* Luego 4 entradas */}
-          <h2 className="text-3xl font-semibold text-amber-800 mb-4">
-            Especificaciones Técnicas – 4 entradas
-          </h2>
-          <table className="min-w-full border border-gray-300 text-sm">
-            <thead className="bg-amber-600 text-white">
-              <tr>
-                <th className="border px-4 py-2">Parámetro</th>
-                <th className="border px-4 py-2">Valor</th>
-                <th className="border px-4 py-2">Unidad</th>
-                <th className="border px-4 py-2">Comentarios</th>
-              </tr>
-            </thead>
-            <tbody>
-              {[
-                ["Tipo de pallet", "Block pallet, 4 entradas", "–", "Estándar internacional (ISO/Euro)"],
-                ["Dimensiones nominales", "1200x1000 / 1200x800", "mm", "ISO y Euro pallet"],
-                ["Altura total", "140 – 160", "mm", "Varía según diseño"],
-                ["Peso aproximado", "15 – 25", "kg", "Depende de madera y humedad"],
-                ["Material", "Pino / Eucalipto", "–", "Maderas blandas y secas"],
-                ["Capacidad estática", "1000 – 4000", "kg", "Apilado en piso"],
-                ["Capacidad dinámica", "800 – 1500", "kg", "En movimiento con montacargas"],
-                ["Capacidad en rack", "500 – 1000", "kg", "Depende de refuerzo"],
-                ["Nº de tacos", "9", "unid.", "3 filas de 3 bloques"],
-                ["Norma exportación", "ISPM 15 – HT", "–", "Tratamiento térmico"],
-              ].map((row, i) => (
-                <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-gray-100"}>
-                  {row.map((cell, j) => (
-                    <td key={j} className="border px-4 py-2">{cell}</td>
-                  ))}
+          <div>
+            <h2 className="text-3xl font-semibold text-amber-800 mb-4">
+              Ficha técnica – parihuela de 4 entradas
+            </h2>
+            <table className="min-w-full border border-gray-300 text-sm">
+              <thead className="bg-amber-600 text-white">
+                <tr>
+                  <th className="border border-gray-300 px-4 py-2 text-left">Parámetro</th>
+                  <th className="border border-gray-300 px-4 py-2 text-left">Valor</th>
+                  <th className="border border-gray-300 px-4 py-2 text-left">Unidad</th>
+                  <th className="border border-gray-300 px-4 py-2 text-left">Comentarios</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {[
+                  ["Tipo", "Con tacos (block)", "–", "Acceso por cuatro lados"],
+                  ["Medidas más usadas", "1200 × 1000 / 1200 × 800", "mm", "También a medida"],
+                  ["Altura total", "140 – 160", "mm", "Según diseño"],
+                  ["Peso aproximado", "15 – 25", "kg", "Según madera y humedad"],
+                  ["Material", "Pino o eucalipto", "–", "Madera seleccionada"],
+                  ["Nº de tacos", "9", "unid.", "3 filas de 3 tacos"],
+                  ["Capacidad estática", "1,000 – 4,000", "kg", "Apilado en piso, referencial"],
+                  ["Capacidad dinámica", "800 – 1,500", "kg", "Con montacargas, referencial"],
+                  ["Capacidad en rack", "500 – 1,000", "kg", "Según refuerzo"],
+                  ["Tratamiento para exportación", "HT – NIMF 15", "–", "Opcional"],
+                ].map(fila)}
+              </tbody>
+            </table>
+          </div>
+
+          <p className="text-xs text-gray-500">
+            * Las capacidades son referenciales y dependen del diseño, la madera y el tipo de
+            carga. Indícanos el peso de tu mercadería y te recomendamos el modelo adecuado.
+          </p>
         </div>
 
       </div>
     </div>
   );
 }
-

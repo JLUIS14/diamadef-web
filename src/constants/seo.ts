@@ -71,9 +71,9 @@ export const seoData: Record<string, SeoEntry> = {
     title: "Madera Copaiba en Lima | Venta – Diamadef (Madesba)",
     description: "Venta de madera copaiba en Lima para tus proyectos. Cortes a medida y envíos a todo el Perú.",
   },
-  "/productos/maderas/roble": {
-    title: "Madera Roble en Lima | Venta – Diamadef (Madesba)",
-    description: "Venta de madera roble en Lima para carpintería y acabados. Cortes a medida y envíos a nivel nacional.",
+   "/productos/maderas/roble": {
+    title: "Madera Roble Económica en Lima | Encofrado y Obra – Diamadef (Madesba)",
+    description: "Madera roble en Lima: grupo de maderas amazónicas suaves y económicas para encofrado, embalaje y obra. Cortes a medida y envíos a todo el Perú.",
   },
   "/productos/maderas/bolaina": {
     title: "Madera Bolaina en Lima | Venta y Cortes – Diamadef (Madesba)",
@@ -97,46 +97,45 @@ export const seoData: Record<string, SeoEntry> = {
   },
 
   // ===== Triplay y tableros =====
-  "/productos/triplay/okoume": {
-    title: "Triplay Okoume en Lima | Precio y Medidas – Diamadef (Madesba)",
-    description: "Venta de triplay okoume en Lima en diferentes espesores para muebles y carpintería. Envíos a todo el Perú.",
+    "/productos/triplay/okoume": {
+    title: "Triplay Okoume en Lima | Muebles y Carpintería Fina – Diamadef (Madesba)",
+    description: "Venta de triplay okoume en Lima: tablero liviano de acabado fino para muebles, puertas y revestimientos. 1.22 x 2.44 m de 4 a 18 mm. Envíos a todo el Perú.",
   },
   "/productos/triplay/bintangor": {
-    title: "Triplay Bintangor en Lima | Venta – Diamadef (Madesba)",
-    description: "Venta de triplay bintangor en Lima en distintos espesores. Cortes a medida y envíos a nivel nacional.",
-  },
+  title: "Triplay Bintangor en Lima | Muebles y Puertas – Diamadef (Madesba)",
+  description: "Venta de triplay bintangor en Lima: cara rojiza y acabado liso para muebles, puertas y revestimientos. 1.22 x 2.44 m de 3 a 18 mm. Envíos a todo el Perú.",
+},
   "/productos/triplay/lupuna": {
-    title: "Triplay Lupuna en Lima | Venta – Diamadef (Madesba)",
-    description: "Venta de triplay lupuna en Lima para construcción y carpintería. Envíos a todo el Perú.",
+    title: "Triplay Lupuna en Lima | Encofrado y Carpintería – Diamadef (Madesba)",
+    description: "Venta de triplay lupuna en Lima: tableros 1.22 x 2.44 m de 4 a 18 mm para encofrado, muebles y embalaje. Cortes a medida y envíos a todo el Perú. Cotiza por WhatsApp.",
   },
-  "/productos/triplay/fenolico-bc": {
-    title: "Triplay Fenólico BC en Lima | Para Encofrado – Diamadef (Madesba)",
-    description: "Venta de triplay fenólico BC en Lima, ideal para encofrados y construcción. Envíos a todo el Perú.",
+    "/productos/triplay/fenolico-bc": {
+    title: "Triplay Fenólico B/C en Lima | Encofrado – Diamadef (Madesba)",
+    description: "Venta de triplay fenólico B/C en Lima: encolado WBP resistente a la humedad, 1.22 x 2.44 m de 9 a 18 mm para encofrado y construcción. Envíos a todo el Perú.",
   },
   "/productos/triplay/fenolico-doble-film": {
-    title: "Fenólico Doble Film en Lima | Encofrado – Diamadef (Madesba)",
-    description: "Tablero fenólico doble film resistente al agua, ideal para encofrados de concreto. Venta en Lima con envíos a todo el Perú.",
+    title: "Triplay Fenólico Doble Film en Lima | Encofrado Reutilizable – Diamadef (Madesba)",
+    description: "Venta de triplay fenólico doble film en Lima: film 180 g/m², encolado WBP, 1.22 x 2.44 m de 12 a 18 mm. De 8 a 15 usos en encofrado. Envíos a todo el Perú.",
   },
   "/productos/triplay/osb": {
-    title: "Tablero OSB en Lima | Venta – Diamadef (Madesba)",
-    description: "Venta de tableros OSB en Lima para construcción, techos y tabiques. Envíos a todo el Perú.",
+    title: "Tablero OSB en Lima | Techos, Pisos y Tabiques – Diamadef (Madesba)",
+    description: "Venta de tableros OSB en Lima para techos, entrepisos, tabiques, cercos y embalaje. Formato 1.22 x 2.44 m, económico y resistente. Envíos a todo el Perú.",
   },
   "/productos/triplay/mdf": {
-    title: "Tablero MDF en Lima | Venta – Diamadef (Madesba)",
-    description: "Venta de tableros MDF en Lima para muebles y acabados interiores. Cortes a medida y envíos a nivel nacional.",
+    title: "Tablero MDF en Lima | Crudo y RH para Muebles – Diamadef (Madesba)",
+    description: "Venta de tableros MDF en Lima: superficie lisa para muebles, puertas y molduras. Espesores de 9 a 25 mm, versión RH resistente a humedad. Envíos a todo el Perú.",
   },
-
   // ===== Otros productos =====
   "/productos/parihuelas": {
-    title: "Parihuelas y Pallets de Madera en Lima | Diamadef (Madesba)",
-    description: "Venta de parihuelas y pallets de madera en Lima, con opción de tratamiento térmico para exportación. Envíos a todo el Perú.",
-  },
-  "/productos/durmientes": {
-    title: "Durmientes de Madera en Lima | Venta – Diamadef (Madesba)",
-    description: "Venta de durmientes de madera en Lima para minería, vías férreas y construcción. Envíos a todo el Perú.",
-  },
-  "/productos/postes": {
-    title: "Postes de Madera en Lima | Venta – Diamadef (Madesba)",
-    description: "Venta de postes de madera en Lima para cercos, electrificación y construcción. Envíos a todo el Perú.",
-  },
+  title: "Parihuelas y Pallets de Madera en Lima | NIMF 15 – Diamadef (Madesba)",
+  description: "Fabricación de parihuelas de madera en Lima de 2 y 4 entradas, medidas estándar o a pedido, con tratamiento térmico NIMF 15 para exportación. Envíos a todo el Perú.",
+},
+"/productos/durmientes": {
+  title: "Durmientes de Madera en Lima | Ferrocarril y Minería – Diamadef (Madesba)",
+  description: "Venta de durmientes de madera dura y tratada en Lima para vías férreas, minería y obras civiles. Medidas estándar o a pedido. Envíos a todo el Perú.",
+},
+"/productos/postes": {
+  title: "Postes de Madera Tratada en Lima | Electrificación y Cercos – Diamadef (Madesba)",
+  description: "Venta de postes de madera tratada en Lima de 6 a 12 m para electrificación, telecomunicaciones, cercos y obras. Envíos a todo el Perú.",
+},
 };

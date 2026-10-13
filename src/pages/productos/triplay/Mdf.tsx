@@ -1,44 +1,57 @@
+import { Seo } from "../../../components/common/Seo";
+import { BloqueCotizar } from "../../../components/common/BloqueCotizar";
+
 export default function TableroMDF() {
   return (
     <div className="bg-[#f9f7f3] min-h-screen p-6">
+      <Seo path="/productos/triplay/mdf" />
+
       <div className="max-w-6xl mx-auto space-y-10">
 
         {/* Título */}
         <div className="text-center">
           <h1 className="text-4xl md:text-5xl font-extrabold text-amber-800 mb-4">
-            Tablero MDF
+            Tablero MDF en Lima
           </h1>
-          <p className="text-lg text-gray-700 max-w-3xl mx-auto text-justify">
-            El MDF (Medium Density Fiberboard) es un tablero fabricado a partir de{" "}
-            <strong>fibras de madera mezcladas con resinas sintéticas</strong>, 
-            prensadas en caliente bajo alta presión. Es un material homogéneo y uniforme, 
-            más denso que el aglomerado, pero más blando que el triplay fenólico u OSB. 
-            Su superficie totalmente lisa lo convierte en ideal para acabados de{" "}
-            <strong>pintura, lacados o recubrimientos decorativos</strong>.
+          <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+            Tablero de fibra de densidad media con superficie lisa, ideal para muebles,
+            puertas, molduras y acabados con pintura o laca. Cortes a medida y envíos a
+            todo el Perú.
           </p>
         </div>
+
+        {/* Bloque de cotización */}
+        <BloqueCotizar producto="tableros MDF" />
 
         {/* Galería de imágenes */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <img
             src="/images/triplay/Mdf.jpg"
-            alt="Tablero MDF"
+            alt="Planchas de tablero MDF crudo para muebles en Lima"
+            loading="lazy"
             className="w-full h-64 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300"
           />
           <img
             src="/images/triplay/Mdf1.jpg"
-            alt="Detalle de superficie MDF"
+            alt="Detalle de la superficie lisa y el canto de un tablero MDF"
+            loading="lazy"
             className="w-full h-64 object-cover rounded-xl shadow-lg transition-all duration-500 hover:scale-105 hover:object-contain hover:bg-black"
           />
         </div>
 
         {/* Definición */}
         <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-amber-700">
+          <h2 className="text-2xl font-semibold text-amber-800 mb-3">
+            ¿Qué es el tablero MDF?
+          </h2>
           <p className="text-lg text-gray-800 leading-relaxed text-justify">
-            Es ampliamente usado en <strong>muebles, puertas, decoración interior 
-            y carpintería</strong>, gracias a su facilidad de mecanizado y 
-            versatilidad. Puede presentarse en versión cruda o recubierta con 
-            melamina, chapa de madera natural o PVC.
+            El <strong>MDF</strong> (Medium Density Fiberboard o tablero de fibra de densidad
+            media) se fabrica con <strong>fibras de madera unidas con resinas sintéticas</strong> y
+            prensadas en caliente. El resultado es un tablero homogéneo, sin vetas ni nudos, más
+            denso que el aglomerado y con una <strong>superficie totalmente lisa</strong>, perfecta
+            para pintura, laca o recubrimientos decorativos. Se vende <strong>crudo</strong> o
+            recubierto con melamina, chapa natural o PVC, y es muy usado en muebles, puertas,
+            decoración interior y carpintería.
           </p>
         </div>
 
@@ -47,90 +60,112 @@ export default function TableroMDF() {
 
           {/* Características */}
           <div className="bg-amber-50 border border-amber-200 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
-            <h2 className="text-2xl font-semibold text-amber-800 mb-4">Características principales</h2>
+            <h2 className="text-2xl font-semibold text-amber-800 mb-4">
+              Características del MDF
+            </h2>
             <ul className="list-disc list-inside text-gray-700 space-y-2">
-              <li><strong>Densidad:</strong> 600 – 800 kg/m³.</li>
+              <li><strong>Densidad:</strong> 600 – 800 kg/m³ según espesor y fabricante.</li>
               <li><strong>Superficie:</strong> lisa y uniforme, ideal para acabados.</li>
-              <li><strong>Procesamiento:</strong> fácil de cortar, fresar y perforar.</li>
-              <li><strong>Espesores:</strong> de 2 a 40 mm (más comunes: 9, 15, 18, 25 mm).</li>
-              <li><strong>Versiones:</strong> estándar, RH (resistente a humedad), ignífugo.</li>
+              <li><strong>Mecanizado:</strong> fácil de cortar, fresar, perforar y moldurar.</li>
+              <li><strong>Espesores:</strong> más comunes 9, 15, 18 y 25 mm (consultar otros).</li>
+              <li><strong>Versiones:</strong> estándar, RH (resistente a la humedad) e ignífugo.</li>
             </ul>
           </div>
 
           {/* Usos */}
           <div className="bg-yellow-50 border border-yellow-200 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
-            <h2 className="text-2xl font-semibold text-yellow-800 mb-4">Usos principales</h2>
+            <h2 className="text-2xl font-semibold text-yellow-800 mb-4">
+              Usos del tablero MDF
+            </h2>
             <ul className="list-disc list-inside text-gray-700 space-y-2">
-              <li>Muebles: closets, repisas, cocinas, escritorios.</li>
-              <li>Puertas lisas o enchapadas.</li>
-              <li>Decoración: molduras, zócalos, paneles.</li>
-              <li>Revestimientos de paredes y techos.</li>
-              <li>Carpintería y ebanistería.</li>
-              <li>Soporte para laminados o chapas.</li>
+              <li>Muebles: closets, repisas, cocinas y escritorios.</li>
+              <li>Puertas lisas, contraplacadas o enchapadas.</li>
+              <li>Decoración: molduras, zócalos y paneles.</li>
+              <li>Revestimientos interiores de paredes y techos.</li>
+              <li>Exhibidores, stands y mobiliario comercial.</li>
+              <li>Base para laminados, melamina o chapas.</li>
             </ul>
           </div>
         </div>
 
-        {/* Ventajas */}
-        <div className="bg-green-50 border border-green-200 p-6 rounded-xl shadow-md">
-          <h2 className="text-2xl font-semibold text-green-800 mb-4">Ventajas</h2>
-          <ul className="list-disc list-inside text-gray-700 space-y-2">
-            <li>Superficie lisa, ideal para pintado o recubrimiento.</li>
-            <li>No presenta vetas ni nudos.</li>
-            <li>Permite cortes y moldurados precisos.</li>
-            <li>Más económico que la madera maciza o triplay fenólico.</li>
-            <li>Versátil: se usa en muebles, decoración y puertas.</li>
-            <li>Buen comportamiento acústico y de aislamiento.</li>
-            <li>Versiones especiales resistentes a humedad y fuego.</li>
-          </ul>
+        {/* Ventajas y Desventajas */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="bg-green-50 border border-green-200 p-6 rounded-xl shadow-md">
+            <h2 className="text-2xl font-semibold text-green-800 mb-4">
+              Ventajas del MDF
+            </h2>
+            <ul className="list-disc list-inside text-gray-700 space-y-2">
+              <li>Superficie lisa, ideal para pintar o recubrir.</li>
+              <li>Sin vetas ni nudos: acabado uniforme.</li>
+              <li>Permite cortes, fresados y moldurados precisos.</li>
+              <li>Más económico que la madera maciza.</li>
+              <li>Versiones especiales resistentes a humedad y fuego.</li>
+            </ul>
+          </div>
+
+          <div className="bg-red-50 border border-red-200 p-6 rounded-xl shadow-md">
+            <h2 className="text-2xl font-semibold text-red-800 mb-4">
+              Limitaciones del MDF
+            </h2>
+            <ul className="list-disc list-inside text-gray-700 space-y-2">
+              <li>No apto para exterior ni contacto con agua.</li>
+              <li>Se hincha con la humedad si no está sellado (el MDF RH resiste mejor).</li>
+              <li>Menor resistencia estructural y al clavado que el triplay u OSB.</li>
+              <li>Más pesado que el aglomerado.</li>
+              <li>Emisión de formaldehído según la clase (preferir E1 o E0).</li>
+            </ul>
+          </div>
         </div>
 
-        {/* Desventajas */}
-        <div className="bg-red-50 border border-red-200 p-6 rounded-xl shadow-md">
-          <h2 className="text-2xl font-semibold text-red-800 mb-4">Desventajas</h2>
-          <ul className="list-disc list-inside text-gray-700 space-y-2">
-            <li>No apto para intemperie sin protección.</li>
-            <li>Menor resistencia estructural que OSB o triplay.</li>
-            <li>Más pesado que el aglomerado.</li>
-            <li>Puede hincharse con humedad.</li>
-            <li>Posible liberación de formaldehído (según calidad).</li>
-            <li>Necesita recubrimiento para mayor durabilidad.</li>
-          </ul>
-        </div>
+        <p className="text-gray-700 text-center">
+          ¿Necesitas un tablero estructural para construcción? Revisa el{" "}
+          <a href="/productos/triplay/osb" className="text-amber-800 underline font-semibold">
+            tablero OSB
+          </a>{" "}
+          o el{" "}
+          <a href="/productos/triplay/fenolico-bc" className="text-amber-800 underline font-semibold">
+            triplay fenólico
+          </a>
+          .
+        </p>
 
         {/* Tabla técnica */}
         <div className="overflow-x-auto bg-white rounded-xl shadow-lg p-6">
           <h2 className="text-3xl font-semibold text-amber-800 mb-4">
-            Especificaciones Técnicas
+            Ficha técnica del tablero MDF
           </h2>
           <table className="min-w-full border border-gray-300 text-sm">
             <thead className="bg-amber-600 text-white">
               <tr>
-                <th className="border px-4 py-2 text-center">Propiedad</th>
-                <th className="border px-4 py-2 text-center">Valor</th>
-                <th className="border px-4 py-2 text-center">Unidad</th>
-                <th className="border px-4 py-2 text-center">Observaciones</th>
+                <th className="border border-gray-300 px-4 py-2 text-left">Propiedad</th>
+                <th className="border border-gray-300 px-4 py-2 text-left">Valor</th>
+                <th className="border border-gray-300 px-4 py-2 text-left">Unidad</th>
+                <th className="border border-gray-300 px-4 py-2 text-left">Observaciones</th>
               </tr>
             </thead>
             <tbody>
               {[
-                ["Densidad", "600 – 800", "kg/m³", "Según especie y fabricante"],
-                ["Módulo de Elasticidad (MOE)", "2500 – 3500", "N/mm²", "Resistencia a flexión"],
-                ["Módulo de Ruptura (MOR)", "20 – 40", "N/mm²", "En flexión estática"],
-                ["Resistencia a la tracción perpendicular (IB)", "0.55 – 0.90", "N/mm²", "Depende de calidad del tablero"],
-                ["Contenido de humedad", "4 – 11", "%", "Según condiciones de almacenamiento"],
-                ["Espesores comerciales", "2 – 40", "mm", "Más comunes: 9, 15, 18, 25 mm"],
-                ["Dimensiones estándar", "1220 × 2440 / 1830 × 2440", "mm", "Según mercado y fabricante"],
-                ["Clases de emisión formaldehído", "E0, E1, E2", "—", "Hoy se prefieren E0 y E1"],
+                ["Densidad", "600 – 800", "kg/m³", "Según espesor y fabricante"],
+                ["Módulo de elasticidad (MOE)", "2,500 – 3,500", "N/mm²", "Rigidez a la flexión"],
+                ["Resistencia a la flexión (MOR)", "20 – 40", "N/mm²", "Flexión estática"],
+                ["Tracción perpendicular (cohesión interna)", "0.55 – 0.90", "N/mm²", "Según calidad del tablero"],
+                ["Contenido de humedad", "4 – 11", "%", "Al salir de fábrica"],
+                ["Espesores comerciales", "9, 15, 18, 25", "mm", "Otros espesores a pedido"],
+                ["Dimensiones", "1220 × 2440 / 1830 × 2440", "mm", "Según fabricante"],
+                ["Clase de emisión de formaldehído", "E0 / E1", "—", "Recomendadas para interiores"],
               ].map((row, i) => (
                 <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-gray-100"}>
                   {row.map((cell, j) => (
-                    <td key={j} className="border px-4 py-2">{cell}</td>
+                    <td key={j} className="border border-gray-300 px-4 py-2">{cell}</td>
                   ))}
                 </tr>
               ))}
             </tbody>
           </table>
+          <p className="text-xs text-gray-500 mt-3">
+            * Valores de referencia para MDF estándar (1 N/mm² = 1 MPa). Solicítanos la ficha
+            técnica del lote disponible.
+          </p>
         </div>
 
       </div>

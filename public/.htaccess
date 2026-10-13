@@ -7,6 +7,10 @@
   RewriteCond %{HTTP_HOST} ^www\. [NC]
   RewriteRule ^(.*)$ https://diamadef.com/$1 [L,R=301]
 
+  # URLs spam y basura del hackeo: responder 410 (eliminado definitivamente)
+  RewriteRule ^(blog-Slot-Gacor|buy|feature|attributes|category|clientlog)(/.*)?$ - [G]
+  RewriteRule ^productos/maderas/copaibacdn$ - [G]
+
   # Archivos y carpetas reales se sirven normal
   RewriteCond %{REQUEST_FILENAME} -f [OR]
   RewriteCond %{REQUEST_FILENAME} -d
